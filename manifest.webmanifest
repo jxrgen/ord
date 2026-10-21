@@ -1,8 +1,8 @@
 {
- "name": "Ordæderen",
- "short_name": "Ordæderen",
+ "name": "Ordslugeren",
+ "short_name": "Ordslugeren",
  "lang": "da",
- "description": "Samarbejdsordspil for to – I spiller sammen mod Ordæderen.",
+ "description": "Samarbejdsordspil for to – I spiller sammen mod Ordslugeren.",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",

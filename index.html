@@ -6,22 +6,22 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Ordæderen">
+<meta name="apple-mobile-web-app-title" content="Ordslugeren">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
-<title>Ordæderen</title>
+<title>Ordslugeren</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#2c5e66">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Ordæderen">
+<meta name="apple-mobile-web-app-title" content="Ordslugeren">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fredoka:wght@500;600;700&display=swap">
 <style>
-/* Ordæderen – UI.  Rolig, dæmpet palet: sten, elfenben og én skiferblå accent. */
+/* Ordslugeren – UI.  Rolig, dæmpet palet: sten, elfenben og én skiferblå accent. */
 :root, .skinbox[data-p="sten"] {
   --tile-bw: 1.5px;
   --font-d: 'Fredoka', 'Baloo 2', 'Nunito', ui-rounded, 'Segoe UI Rounded', system-ui, sans-serif;
@@ -67,11 +67,11 @@
   --frame: #d6d3c8;
   --cell: #f4f2eb;
   --cell-ink: #7d837c;
-  --dl: #dde6eb; --dl-ink: #3b5262;
-  --tl: #c4d3dd; --tl-ink: #2b4354;
-  --ql: #adc1cf; --ql-ink: #1f3747;
-  --dw: #eee1d8; --dw-ink: #6b4738;
-  --tw: #dfc8bb; --tw-ink: #573426;
+  --dl: #cfe4f3; --dl-ink: #14405c;
+  --tl: #8ec4e8; --tl-ink: #0b2c45;
+  --ql: #3f86c6; --ql-ink: #ffffff;
+  --dw: #f2b06a; --dw-ink: #5c300a;
+  --tw: #db5f46; --tw-ink: #ffffff;
   --poison-bg: #dbe2c8; --ice-bg: #e3eef2;
   --hl-eat: #a8701c;
 
@@ -88,8 +88,8 @@
     --ok: #86c9a0; --ok-soft: #1c3428; --err: #f0938a; --err-soft: #3e2422; --warn: #e2b05e;
     --eat: #050606; --rune: #0b0d10;
     --frame: #0c0f11; --cell: #1f2528; --cell-ink: #8a938d;
-    --dl: #253139; --dl-ink: #b3c8d5; --tl: #2e3f4b; --tl-ink: #c7d8e3; --ql: #3a4f5e; --ql-ink: #dbe8f0;
-    --dw: #362d2a; --dw-ink: #e2c9bd; --tw: #463631; --tw-ink: #eed7cb;
+    --dl: #1d3a4f; --dl-ink: #a6d4ee; --tl: #255f86; --tl-ink: #d9edfb; --ql: #2f7fc0; --ql-ink: #ffffff;
+    --dw: #7a4a1c; --dw-ink: #f7c88a; --tw: #9c3a28; --tw-ink: #ffd7cb;
     --poison-bg: #2c3424; --ice-bg: #263239;
     --hl-eat: #e2b05e; --eat-ring: #e3e6e8;
     color-scheme: dark;
@@ -105,8 +105,8 @@
   --ok: #86c9a0; --ok-soft: #1c3428; --err: #f0938a; --err-soft: #3e2422; --warn: #e2b05e;
   --eat: #050606; --rune: #0b0d10;
   --frame: #0c0f11; --cell: #1f2528; --cell-ink: #8a938d;
-  --dl: #253139; --dl-ink: #b3c8d5; --tl: #2e3f4b; --tl-ink: #c7d8e3; --ql: #3a4f5e; --ql-ink: #dbe8f0;
-  --dw: #362d2a; --dw-ink: #e2c9bd; --tw: #463631; --tw-ink: #eed7cb;
+  --dl: #1d3a4f; --dl-ink: #a6d4ee; --tl: #255f86; --tl-ink: #d9edfb; --ql: #2f7fc0; --ql-ink: #ffffff;
+  --dw: #7a4a1c; --dw-ink: #f7c88a; --tw: #9c3a28; --tw-ink: #ffd7cb;
   --poison-bg: #2c3424; --ice-bg: #263239;
   --hl-eat: #e2b05e; --eat-ring: #e3e6e8;
   color-scheme: dark;
@@ -125,8 +125,8 @@
   --tile2: #efe6d5; --tile2-hi: #f8f3ea; --tile2-lo: #cdbd9c;
   --eat: #141210; --rune: #2a2620; --rune-glow: #c99a3e;
   --frame: #d8ccb6; --cell: #f6f0e4; --cell-ink: #8c8070;
-  --dl: #e2e6e2; --dl-ink: #3d4f49; --tl: #c9d4cf; --tl-ink: #2c4039; --ql: #b0c1ba; --ql-ink: #20332c;
-  --dw: #f1e0d2; --dw-ink: #6e4530; --tw: #e3c7b1; --tw-ink: #5a321e;
+  --dl: #cfe4f3; --dl-ink: #14405c; --tl: #8ec4e8; --tl-ink: #0b2c45; --ql: #3f86c6; --ql-ink: #ffffff;
+  --dw: #f2b06a; --dw-ink: #5c300a; --tw: #db5f46; --tw-ink: #ffffff;
   --poison-bg: #dde2c6; --ice-bg: #e2ecee; --hl-eat: #9a6416;
 }
 :root[data-skin="skov"], .skinbox[data-p="skov"] {
@@ -140,8 +140,8 @@
   --tile2: #ebe4d2; --tile2-hi: #f6f2e8; --tile2-lo: #c8bb9c;
   --eat: #101311; --rune: #232a25; --rune-glow: #c8a64e;
   --frame: #c3cfbe; --cell: #eef2ea; --cell-ink: #75826f;
-  --dl: #dce6e0; --dl-ink: #33504a; --tl: #c0d3cb; --tl-ink: #254139; --ql: #a7c0b6; --ql-ink: #1a342b;
-  --dw: #ece4cf; --dw-ink: #655222; --tw: #dccfa9; --tw-ink: #4f3f13;
+  --dl: #cfe4f3; --dl-ink: #14405c; --tl: #8ec4e8; --tl-ink: #0b2c45; --ql: #3f86c6; --ql-ink: #ffffff;
+  --dw: #f2b06a; --dw-ink: #5c300a; --tw: #db5f46; --tw-ink: #ffffff;
   --poison-bg: #d6dfc0; --ice-bg: #e0ecec; --hl-eat: #956b1a;
 }
 :root[data-skin="fjord"], .skinbox[data-p="fjord"] {
@@ -155,8 +155,8 @@
   --tile2: #e3dccd; --tile2-hi: #f1ece2; --tile2-lo: #bfb193;
   --eat: #04070b; --rune: #070b11; --rune-glow: #d9b35e;
   --frame: #09101a; --cell: #192536; --cell-ink: #8494aa;
-  --dl: #213247; --dl-ink: #bcd0e5; --tl: #2a3f5a; --tl-ink: #cfdeef; --ql: #355070; --ql-ink: #e1ebf6;
-  --dw: #372d38; --dw-ink: #e5cbd8; --tw: #47384a; --tw-ink: #f0dbe6;
+  --dl: #1d3a4f; --dl-ink: #a6d4ee; --tl: #255f86; --tl-ink: #d9edfb; --ql: #2f7fc0; --ql-ink: #ffffff;
+  --dw: #7a4a1c; --dw-ink: #f7c88a; --tw: #9c3a28; --tw-ink: #ffd7cb;
   --poison-bg: #26332a; --ice-bg: #22344a; --hl-eat: #e3b765; --eat-ring: #e6eaef;
 }
 :root[data-skin="kontrast"], .skinbox[data-p="kontrast"] {
@@ -171,8 +171,8 @@
   --tile2: #f6e7a6; --tile2-hi: #fbf0c4; --tile2-lo: #d6bd5c;
   --eat: #000000; --rune: #000000; --rune-glow: #ffcc00;
   --frame: #000000; --cell: #ffffff; --cell-ink: #444444;
-  --dl: #e6eef5; --dl-ink: #000000; --tl: #c4d6e8; --tl-ink: #000000; --ql: #9fbcd8; --ql-ink: #000000;
-  --dw: #f6e3dc; --dw-ink: #000000; --tw: #e9c2b2; --tw-ink: #000000;
+  --dl: #cfe6f8; --dl-ink: #000000; --tl: #8fc4ec; --tl-ink: #000000; --ql: #7fb2e2; --ql-ink: #000000;
+  --dw: #f6c488; --dw-ink: #000000; --tw: #ec8a66; --tw-ink: #000000;
   --poison-bg: #dfe8c8; --ice-bg: #e2f0f6; --hl-eat: #c05a00;
 }
 :root[data-skin="kontrast"] .cell, .skinbox[data-p="kontrast"] .cell { box-shadow: inset 0 0 0 1px #000; }
@@ -477,7 +477,7 @@ svg.ic { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor
 .tile.k-silver { --t-bg: var(--silver); --t-hi: var(--silver-hi); --t-lo: var(--silver-lo); --t-edge: #8a939a; }
 .tile.k-rot { --t-bg: var(--rot); --t-hi: var(--rot-hi); --t-lo: var(--rot-lo); --t-edge: #7f8257; --t-ink: var(--rot-ink);
   background: radial-gradient(circle at 22% 70%, rgba(90, 95, 50, .45) 0 7%, transparent 8%), radial-gradient(circle at 75% 28%, rgba(90, 95, 50, .4) 0 5%, transparent 6%), linear-gradient(180deg, var(--t-hi) 0%, var(--t-bg) 60%); }
-.tile.k-gold::after { content: ''; position: absolute; inset: -20%; background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, .55) 48%, transparent 56%); transform: translateX(-120%); animation: shine 5s ease-in-out infinite; pointer-events: none; }
+.tile.k-gold::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(135deg, rgba(255, 255, 255, .4) 0%, transparent 42%); pointer-events: none; }
 .tile .kt { position: absolute; left: 8%; top: 6%; font: 600 calc(var(--ts) * .2)/1 var(--font-d); opacity: .7; }
 .tile .fly { position: absolute; left: 6%; top: 5%; width: 26%; height: 26%; animation: fly 2.4s ease-in-out infinite; pointer-events: none; }
 .tile .fuse { position: absolute; left: 5%; top: 5%; width: 28%; height: 28%; pointer-events: none; }
@@ -600,7 +600,7 @@ svg.ic { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor
 .flyL { position: absolute; transform: translate(-50%, -50%); animation: flyAway 1s cubic-bezier(.3, .2, .6, 1) forwards; }
 .shake { animation: shake .45s ease; }
 
-/* Ordæderens scene */
+/* Ordslugerens scene */
 .scene { position: fixed; inset: 0; z-index: 70; background: linear-gradient(180deg, rgba(8, 10, 9, .05) 30%, rgba(8, 10, 9, .55)); animation: fadeIn .3s ease; cursor: pointer; }
 .scene-m { position: absolute; left: 50%; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); width: min(560px, calc(100% - 24px)); transform: translateX(-50%); display: flex; align-items: flex-end; gap: 4px; }
 .scene-m .mw { width: 150px; flex: none; animation: riseUp .6s ease-out both; margin-left: -10px; }
@@ -854,8 +854,8 @@ svg.ic { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor
   <section id="scr-load" class="screen scr-load">
     <div class="load-box">
       <div class="load-mascot" id="load-mascot"></div>
-      <h1 class="title">Ordæderen</h1>
-      <p class="load-txt" id="load-txt">Ordæderen tygger ordbogen …</p>
+      <h1 class="title">Ordslugeren</h1>
+      <p class="load-txt" id="load-txt">Ordslugeren tygger ordbogen …</p>
       <div class="load-bar"><i id="load-bar"></i></div>
     </div>
   </section>
@@ -867,7 +867,7 @@ svg.ic { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor
     </div>
     <div class="hero">
       <div class="hero-mascot" id="hero-mascot"></div>
-      <h1 class="title">Ordæderen</h1>
+      <h1 class="title">Ordslugeren</h1>
       <p class="hero-sub">Læg ord sammen. Red bogstaverne fra det sultne monster.</p>
     </div>
     <div class="home-btns">
@@ -991,7 +991,7 @@ svg.ic { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor
 <div id="disc-wrap" class="disc-wrap" hidden><div class="disc" id="disc" role="dialog" aria-modal="true" aria-labelledby="disc-h"></div></div>
 
 <script>
-/* Ordæderen – en krumbøjet trold som genbrugelig inline SVG.
+/* Ordslugeren – en krumbøjet trold som genbrugelig inline SVG.
    Mascot.svg(udtryk, {size, cls}) → markup.  Udtryk: happy, sly, angry, hungry, chew, beaten, fat.
    Mascot.set(el, udtryk) skifter udtryk på en eksisterende figur. */
 (function (G) {
@@ -1142,7 +1142,7 @@ G.Mascot = { svg, set, EXPR };
 
 </script>
 <script>
-/* Ordæderen – spilmotor. Ren logik, ingen DOM. Kører i browser og Node. */
+/* Ordslugeren – spilmotor. Ren logik, ingen DOM. Kører i browser og Node. */
 (function (G) {
 'use strict';
 
@@ -1241,7 +1241,7 @@ const SCALE = { 9: 0.45, 11: 0.62, 13: 0.82, 15: 1 };
 const TSCALE = { 9: 0.78, 11: 0.8, 13: 0.82, 15: 1 };
 // antal (tællemissioner, runer) skaleres efter brætstørrelse
 const NSCALE = { 9: 0.5, 11: 0.7, 13: 0.8, 15: 1 };
-// mods der gør jer stærkere/svagere justerer mål og Ordæderens point, så spillet stadig er en udfordring
+// mods der gør jer stærkere/svagere justerer mål og Ordslugerens point, så spillet stadig er en udfordring
 const MODPOW = { bigHand: 1.2, goldRush: 1.15, smallHand: 0.8, rotten: 0.95, wild: 1.05 };
 const modPow = st => (st.mods || []).reduce((a, m) => a * (MODPOW[m] || 1), 1);
 // lange scenarier (mange runder) begrænses af posens størrelse på små brætter
@@ -1603,7 +1603,7 @@ function newGame(o) {
   st.players = (o.players || [{ name: 'Dig' }, { name: 'Makker', bot: true }]).map(p => ({ name: p.name, uid: p.uid || null, bot: !!p.bot, rack: [], hand, relay: 0, chest: 0 }));
   SCEN[st.scen].init(st);
   if (st.mods.includes('rush') && st.roundLimit < 99) st.roundLimit = Math.max(4, st.roundLimit - 2);
-  // Ordæderen åbner
+  // Ordslugeren åbner
   st._eCells = [];
   eaterWord(st, 'open');
   if (SCEN[st.scen].afterOpen) SCEN[st.scen].afterOpen(st);
@@ -1614,7 +1614,7 @@ function newGame(o) {
 }
 function log(st, who, txt, pts) { st.log.push({ r: st.round, who, txt, pts: pts ?? null, t: Date.now() }); if (st.log.length > 80) st.log.splice(0, st.log.length - 80); }
 
-// ------------------------------------------------------------------ Ordæderen
+// ------------------------------------------------------------------ Ordslugeren
 function eaterRack(st, n) {
   const L = LANGS[st.lang], pool = [];
   for (const [c, [cnt]] of Object.entries(L.tiles)) if (c !== '?') for (let i = 0; i < cnt; i++) pool.push(c);
@@ -1650,7 +1650,7 @@ function eaterWord(st, strat) {
     const T = TUNE[st.scen], tq = T && T.q != null ? tn(st, T.q) + ((T.qN && T.qN[st.N]) || 0) : d.q;
     best = byStrength(scored, strat === 'open' ? 0.6 : tq);
   }
-  if (!best) { if (strat !== 'open') log(st, 'e', 'Ordæderen fandt intet ord at lægge.'); return null; }
+  if (!best) { if (strat !== 'open') log(st, 'e', 'Ordslugeren fandt intet ord at lægge.'); return null; }
   best.r = evalMove(st, best.pl, 'e', true);
   for (const p of best.pl) st.board[p.i] = { c: p.t.c, k: 'n', v: p.t.v, o: 'e', id: st.seq++ };
   const w = best.r.words[0].w.toUpperCase();
@@ -1658,7 +1658,7 @@ function eaterWord(st, strat) {
   const pts = Math.round(best.r.score * em * (strat === 'open' ? 1 : modPow(st)));
   if (SCEN[st.scen].eaterScores) { st.eater += pts; }
   (st._eCells || (st._eCells = [])).push(...best.pl.map(p => p.i));
-  log(st, 'e', strat === 'open' ? `Ordæderen åbner med ${w}.` : `Ordæderen lægger ${w}` + (SCEN[st.scen].eaterScores ? ` for ${pts} point.` : '.'), SCEN[st.scen].eaterScores ? pts : null);
+  log(st, 'e', strat === 'open' ? `Ordslugeren åbner med ${w}.` : `Ordslugeren lægger ${w}` + (SCEN[st.scen].eaterScores ? ` for ${pts} point.` : '.'), SCEN[st.scen].eaterScores ? pts : null);
   return best;
 }
 function emptyCells(st, filter) { const o = []; for (let i = 0; i < st.N * st.N; i++) if (!st.board[i] && !st.haz[i] && (!filter || filter(i))) o.push(i); return o; }
@@ -1674,11 +1674,11 @@ function nearLast(st, i) { const lm = st.lastMove; if (!lm || !lm.cells || !lm.c
 function gen(name) { return /[sxz]$/i.test(name) ? name + "'" : name + 's'; }
 function hazHot(st, i) { return premWeight(st.prem[i]) * 2 + (isAnchor(st, i) ? 6 : 0) + (sealedBy(st, i).length ? -10 : 0) + (st.scen === 'plague' && nearLast(st, i) ? 5 : 0); }
 const HAZTXT = {
-  rock:   n => n > 1 ? `Ordæderen ruller ${n} klipper ind på brættet.` : 'Ordæderen ruller en klippe ind på brættet.',
-  ice:    n => n > 1 ? `Ordæderen fryser ${n} felter til is.` : 'Ordæderen fryser et felt til is.',
-  poison: n => n > 1 ? `Ordæderen spytter gift på ${n} felter.` : 'Ordæderen spytter gift på et felt.',
-  void:   n => n > 1 ? `Ordæderen river ${n} afgrunde op.` : 'Ordæderen river en afgrund op.',
-  bomb:   (n, f, near) => (n > 1 ? `Ordæderen lægger ${n} bomber` : 'Ordæderen lægger en bombe') + (near ? ' lige op ad jeres nyeste ord' : '') + ` – de${n > 1 ? '' : 'n'} sprænger om ${f} runde${f > 1 ? 'r' : ''}.`
+  rock:   n => n > 1 ? `Ordslugeren ruller ${n} klipper ind på brættet.` : 'Ordslugeren ruller en klippe ind på brættet.',
+  ice:    n => n > 1 ? `Ordslugeren fryser ${n} felter til is.` : 'Ordslugeren fryser et felt til is.',
+  poison: n => n > 1 ? `Ordslugeren spytter gift på ${n} felter.` : 'Ordslugeren spytter gift på et felt.',
+  void:   n => n > 1 ? `Ordslugeren river ${n} afgrunde op.` : 'Ordslugeren river en afgrund op.',
+  bomb:   (n, f, near) => (n > 1 ? `Ordslugeren lægger ${n} bomber` : 'Ordslugeren lægger en bombe') + (near ? ' lige op ad jeres nyeste ord' : '') + ` – de${n > 1 ? '' : 'n'} sprænger om ${f} runde${f > 1 ? 'r' : ''}.`
 };
 function eaterHaz(st, kind, n) {
   const placedC = []; let near = false;
@@ -1722,7 +1722,7 @@ function coverable(st) {
   }
   return set;
 }
-// Efter Ordæderens tur: en bombe må aldrig ligge, hvor det er umuligt at lægge et ord.
+// Efter Ordslugerens tur: en bombe må aldrig ligge, hvor det er umuligt at lægge et ord.
 // Er den blevet umulig (fx af is eller klipper lagt bagefter), flyttes den til et dækbart felt – ellers fiser den ud.
 function fixBombs(st) {
   const bombs = []; for (let i = 0; i < st.N * st.N; i++) if (st.haz[i] && st.haz[i].k === 'bomb') bombs.push(i);
@@ -1766,8 +1766,8 @@ function eaterRune(st, n) {
     if (st.goal.placed != null) st.goal.placed++;
     set.push(c.toUpperCase());
   }
-  if (set.length === 1) log(st, 'e', `Ordæderen sætter runen ${set[0]}. Felterne omkring den er forseglet.`);
-  else if (set.length > 1) log(st, 'e', `Ordæderen sætter runerne ${set.slice(0, -1).join(', ')} og ${set[set.length - 1]}. Felterne omkring dem er forseglet.`);
+  if (set.length === 1) log(st, 'e', `Ordslugeren sætter runen ${set[0]}. Felterne omkring den er forseglet.`);
+  else if (set.length > 1) log(st, 'e', `Ordslugeren sætter runerne ${set.slice(0, -1).join(', ')} og ${set[set.length - 1]}. Felterne omkring dem er forseglet.`);
   return set.length > 0;
 }
 // is på et felt ved siden af ubrudte runer (beskytter dem i to runder)
@@ -1780,15 +1780,15 @@ function eaterRuneGuard(st, n) {
     if (free.length < 2) continue;
     const j = pick(free); st.haz[j] = { k: 'ice', n: 2 }; st._eCells.push(j); done++; which.push(st.board[r].c.toUpperCase());
   }
-  if (done === 1) log(st, 'e', `Ordæderen fryser et felt ved runen ${which[0]} til is.`);
-  else if (done > 1) log(st, 'e', `Ordæderen fryser felter ved runerne ${which.join(' og ')} til is.`);
+  if (done === 1) log(st, 'e', `Ordslugeren fryser et felt ved runen ${which[0]} til is.`);
+  else if (done > 1) log(st, 'e', `Ordslugeren fryser felter ved runerne ${which.join(' og ')} til is.`);
 }
 function eaterCurse(st) {
   const p = rint(2), pl = st.players[p];
   const cands = pl.rack.filter(t => t.k === 'n' || t.k === 'silver');
   if (!cands.length) return;
   const t = pick(cands); t.k = 'rot';
-  log(st, 'e', `Ordæderen forbander ${gen(pl.name)} ${t.c === '?' ? 'blanke brik' : t.c.toUpperCase()} – den er nu rådden.`);
+  log(st, 'e', `Ordslugeren forbander ${gen(pl.name)} ${t.c === '?' ? 'blanke brik' : t.c.toUpperCase()} – den er nu rådden.`);
 }
 function eaterSteal(st) {
   // stjæler fra den spiller der har flest brikker (tilfældig ved lighed)
@@ -1798,7 +1798,7 @@ function eaterSteal(st) {
   const take = Math.min(2, pl.rack.length - 1);
   for (let k = 0; k < take; k++) { const j = rint(pl.rack.length); st.bag.push(pl.rack.splice(j, 1)[0]); }
   shuffle(st.bag);
-  log(st, 'e', `Ordæderen stjæler ${take} brikker fra ${gen(pl.name)} hånd. De ryger tilbage i posen.`);
+  log(st, 'e', `Ordslugeren stjæler ${take} brikker fra ${gen(pl.name)} hånd. De ryger tilbage i posen.`);
 }
 function eaterSpread(st) {
   const src = []; for (let i = 0; i < st.N * st.N; i++) if (st.haz[i] && (st.haz[i].k === 'poison') && !st.board[i]) src.push(i);
@@ -1816,7 +1816,7 @@ function eaterSpread(st) {
   }
   if (n) log(st, 'e', n > 1 ? `Giften breder sig til ${n} nye felter.` : 'Giften breder sig til et nyt felt.');
 }
-// Ordæderen spiser et bogstav: i Broen det der gør mest skade på kæden, ellers et fra jeres seneste ord
+// Ordslugeren spiser et bogstav: i Broen det der gør mest skade på kæden, ellers et fra jeres seneste ord
 function eaterEat(st) {
   const own = []; for (let i = 0; i < st.N * st.N; i++) { const t = st.board[i]; if (t && !t.rune && (t.o === 'p0' || t.o === 'p1')) own.push(i); }
   if (own.length < 4) return;
@@ -1831,16 +1831,16 @@ function eaterEat(st) {
   }
   if (best == null) return;
   const t = st.board[best]; st.board[best] = null; st._eCells.push(best);
-  log(st, 'e', `Ordæderen spiser bogstavet ${t.c.toUpperCase()}${st.scen === 'bridge' ? ' midt i jeres bro' : ''}. Nam!`);
+  log(st, 'e', `Ordslugeren spiser bogstavet ${t.c.toUpperCase()}${st.scen === 'bridge' ? ' midt i jeres bro' : ''}. Nam!`);
 }
-// Ordæderen lægger en klippe på det bedste ledige ordfelt nær brikkerne (TO før DO)
+// Ordslugeren lægger en klippe på det bedste ledige ordfelt nær brikkerne (TO før DO)
 function eaterGuard(st, kinds, why) {
   for (const k of kinds) {
     const cands = emptyCells(st, i => st.prem[i] === k && nearTiles(st, i, 2));
     if (!cands.length) continue;
     const i = weightedPick(cands, i => (isAnchor(st, i) ? 5 : 0) + (nearLast(st, i) ? 3 : 0), 0.5);
     st.haz[i] = { k: 'rock' }; st._eCells.push(i);
-    log(st, 'e', `${why || 'Ordæderen'} ruller en klippe ind på et ${PREM[k].label}-felt.`);
+    log(st, 'e', `${why || 'Ordslugeren'} ruller en klippe ind på et ${PREM[k].label}-felt.`);
     return true;
   }
   return false;
@@ -1878,7 +1878,7 @@ function eaterPhase(st) {
       else if (a === 'steal') eaterSteal(st);
       else if (a === 'spread') eaterSpread(st);
       else if (a === 'eat') eaterEat(st);
-      else if (a === 'guard') eaterGuard(st, n || ['tw'], x || 'Ordæderen kan mærke, at I nærmer jer målet, og');
+      else if (a === 'guard') eaterGuard(st, n || ['tw'], x || 'Ordslugeren kan mærke, at I nærmer jer målet, og');
       else if (a === 'bridge') bridgeBlock(st, n);
       else eaterHaz(st, a, n || 1);
     }
@@ -1934,7 +1934,7 @@ function bridgeBlock(st, n) {
     if (best == null) break;
     st.haz[best] = { k: 'rock' }; st._eCells.push(best); placedN++;
   }
-  if (placedN) log(st, 'e', `Ordæderen spærrer vejen med ${placedN > 1 ? placedN + ' klipper' : 'en klippe'}.`);
+  if (placedN) log(st, 'e', `Ordslugeren spærrer vejen med ${placedN > 1 ? placedN + ' klipper' : 'en klippe'}.`);
 }
 
 // ------------------------------------------------------------------ missioner
@@ -1950,7 +1950,7 @@ const MISSIONS = [
   { id: 'tw', txt: 'Dæk et TO-felt', f: m => m.prems.includes('tw') },
   { id: 'two', txt: 'Lav mindst tre ord i ét træk', f: m => m.nWords >= 3 },
   { id: 'bingo', txt: 'Brug alle brikker på hånden i ét træk', f: m => m.bingo },
-  { id: 'eater', txt: 'Byg et ord med to af Ordæderens bogstaver', f: m => m.eaterLetters >= 2 },
+  { id: 'eater', txt: 'Byg et ord med to af Ordslugerens bogstaver', f: m => m.eaterLetters >= 2 },
   { id: 'double', txt: 'Læg et ord med dobbeltkonsonant (fx KASSE)', f: m => /([bcdfghjklmnpqrstvwxz])\1/.test(m.main) },
   { id: 'edge', txt: 'Læg en brik på brættets yderkant', f: m => m.edge },
   { id: 'pair', txt: 'Begge spillere scorer 20+ i samme runde', f: m => m.pair },
@@ -1965,7 +1965,7 @@ const MISSIONS = [
   { id: 'c_long6', cnt: 1, txt: (st, m) => `Læg ${(m && m.need) || 3} ord på mindst 6 bogstaver`, f: m => m.mainLen >= 6 },
   { id: 'c_s40', cnt: 1, txt: (st, m) => `Scor mindst 40 point i ${(m && m.need) || 3} træk`, f: m => m.score >= 40 },
   { id: 'c_prem', cnt: 1, txt: (st, m) => `Dæk ${(m && m.need) || 3} ordfelter (DO eller TO)`, f: m => m.prems.filter(p => p === 'dw' || p === 'tw').length },
-  { id: 'c_eater', cnt: 1, txt: (st, m) => `Byg videre på Ordæderens bogstaver ${(m && m.need) || 3} gange`, f: m => m.eaterLetters >= 1 }
+  { id: 'c_eater', cnt: 1, txt: (st, m) => `Byg videre på Ordslugerens bogstaver ${(m && m.need) || 3} gange`, f: m => m.eaterLetters >= 1 }
 ];
 MISSIONS.forEach(m => { if (m.id === 'bingo') m.hard = 1; });
 // missionText(st, m) → tekst (tællemissioner med fremskridt, fx "(2/5)"); bare=true udelader fremskridtet
@@ -2003,9 +2003,9 @@ const TUNE = {
 const SCEN = {
   race: {
     name: 'Kapløbet', tag: 'Klassisk', N: 15, eaterScores: true,
-    blurb: 'Ordæderen lægger sine egne ord og samler point. Nå målet før den gør.',
+    blurb: 'Ordslugeren lægger sine egne ord og samler point. Nå målet før den gør.',
     init(st) { st.goal.target = S(st, tn(st, TUNE.race.target)); },
-    goalText: st => `Nå ${st.goal.target} point før Ordæderen.`,
+    goalText: st => `Nå ${st.goal.target} point før Ordslugeren.`,
     plan(st) {
       const p = [['word', 'score'], ['word', 'score']];
       // personlighed: når I nærmer jer målet (og fører), spærrer den gerne et TO-felt
@@ -2018,7 +2018,7 @@ const SCEN = {
     win: st => st.team >= st.goal.target,
     lose: st => st.eater >= st.goal.target,
     final: st => st.team > st.eater,
-    rules: ['Ordæderen lægger to ord hver runde og får point for dem.', 'Den der først når målet, vinder. Når posen er tom, vinder den højeste score.', 'Engang imellem lægger den klipper og giftfelter – og når I nærmer jer målet, spærrer den gerne et TO-felt.']
+    rules: ['Ordslugeren lægger to ord hver runde og får point for dem.', 'Den der først når målet, vinder. Når posen er tom, vinder den højeste score.', 'Engang imellem lægger den klipper og giftfelter – og når I nærmer jer målet, spærrer den gerne et TO-felt.']
   },
   bombs: {
     name: 'Bombenatten', tag: 'Overlev', N: 13, lives: 3,
@@ -2035,7 +2035,7 @@ const SCEN = {
     win: st => false,
     lose: st => st.lives <= 0,
     final: st => st.lives > 0 && st.team >= st.goal.target,
-    rules: ['Hver runde lægger Ordæderen en eller to bomber med en lunte – helst lige op ad jeres nyeste ord.', 'Læg en brik på bombefeltet for at desarmere den (+15 point).', 'En bombe der springer, fjerner bogstaverne omkring sig, og I mister et liv.']
+    rules: ['Hver runde lægger Ordslugeren en eller to bomber med en lunte – helst lige op ad jeres nyeste ord.', 'Læg en brik på bombefeltet for at desarmere den (+15 point).', 'En bombe der springer, fjerner bogstaverne omkring sig, og I mister et liv.']
   },
   runes: {
     name: 'Runeseglene', tag: 'Benspænd', N: 15,
@@ -2055,11 +2055,11 @@ const SCEN = {
     win: st => st.goal.placed >= st.goal.total && st.goal.broken >= st.goal.total,
     lose: st => false,
     final: st => st.goal.broken >= st.goal.total,
-    rules: ['Ordæderen sætter en eller flere runer hver runde, indtil alle er på brættet.', 'Felterne rundt om en rune er forseglet: lægger I en brik dér, skal ordet bruge runen.', 'Runer tæller ikke som forbindelse – ordet gennem runen skal også hænge sammen med jeres andre brikker.', 'Et ord gennem en rune tæller dobbelt og giver +10. Derefter er runen brudt.', 'Ordæderen fryser gerne felterne ved runerne til is.']
+    rules: ['Ordslugeren sætter en eller flere runer hver runde, indtil alle er på brættet.', 'Felterne rundt om en rune er forseglet: lægger I en brik dér, skal ordet bruge runen.', 'Runer tæller ikke som forbindelse – ordet gennem runen skal også hænge sammen med jeres andre brikker.', 'Et ord gennem en rune tæller dobbelt og giver +10. Derefter er runen brudt.', 'Ordslugeren fryser gerne felterne ved runerne til is.']
   },
   bridge: {
     name: 'Broen', tag: 'Forbind', N: 11,
-    blurb: 'Byg en kæde af bogstaver mellem de to fyrtårne, mens Ordæderen lægger klipper i vejen.',
+    blurb: 'Byg en kæde af bogstaver mellem de to fyrtårne, mens Ordslugeren lægger klipper i vejen.',
     init(st) {
       // fyrtårnene sidder i hver sin side – skråt over for hinanden, tæt på hjørnerne
       const N = st.N, sp = TUNE.bridge.spread || 2;
@@ -2081,7 +2081,7 @@ const SCEN = {
     win: st => { const [a, b] = st.goal.portals; return !!(st.board[a] && st.board[b] && tileComp(st, a).has(b)); },
     lose: st => false,
     final: st => SCEN.bridge.win(st),
-    rules: ['Fyrtårnene ◆ sidder ude ved kanten. Begge skal dækkes af brikker, der hænger sammen.', 'Alle brikker tæller, også Ordæderens.', 'Ordæderen lægger klipper på jeres korteste vej og spiser nogle gange et bogstav af broen. Sprængbrikker kan rydde klipperne.']
+    rules: ['Fyrtårnene ◆ sidder ude ved kanten. Begge skal dækkes af brikker, der hænger sammen.', 'Alle brikker tæller, også Ordslugerens.', 'Ordslugeren lægger klipper på jeres korteste vej og spiser nogle gange et bogstav af broen. Sprængbrikker kan rydde klipperne.']
   },
   missions: {
     name: 'Missionerne', tag: 'Opgaver', N: 15,
@@ -2099,7 +2099,7 @@ const SCEN = {
       const p = [['word', 'block']];
       // personlighed: har I en åben TO- eller FB-mission, spærrer den gerne sådan et felt
       const open = st.missions.filter(m => !m.done).map(m => m.id);
-      if ((open.includes('tw') || open.includes('ql')) && chance(st, 0.35)) p.push(['guard', open.includes('tw') ? ['tw'] : ['ql'], 'Ordæderen har luret jeres mission og']);
+      if ((open.includes('tw') || open.includes('ql')) && chance(st, 0.35)) p.push(['guard', open.includes('tw') ? ['tw'] : ['ql'], 'Ordslugeren har luret jeres mission og']);
       else if (chance(st, TUNE.missions.haz)) p.push([pick(['rock', 'poison', 'ice']), 1]);
       return p;
     },
@@ -2107,7 +2107,7 @@ const SCEN = {
     win: st => st.missions.every(m => m.done),
     lose: st => false,
     final: st => st.missions.every(m => m.done),
-    rules: ['Missionerne står øverst. De kan løses af hvem som helst af jer.', 'Ordæderen lægger ord på de bedste felter og drysser forhindringer – og den holder øje med jeres missioner.']
+    rules: ['Missionerne står øverst. De kan løses af hvem som helst af jer.', 'Ordslugeren lægger ord på de bedste felter og drysser forhindringer – og den holder øje med jeres missioner.']
   },
   plague: {
     name: 'Forbandelsen', tag: 'Minusfelter', N: 13,
@@ -2120,18 +2120,18 @@ const SCEN = {
     win: st => st.team >= st.goal.target,
     lose: st => false,
     final: st => st.team >= st.goal.target,
-    rules: ['Giftfelter tæller bogstavet minus dobbelt. Afgrunde gør hele ordet negativt.', 'Giften breder sig hver runde – helst hen mod jeres nyeste ord. Dæk felterne (og tag straffen) eller ryd dem med sprængbrikker.', 'Ordæderen forbander nogle gange en brik på jeres hænder, så den bliver rådden.']
+    rules: ['Giftfelter tæller bogstavet minus dobbelt. Afgrunde gør hele ordet negativt.', 'Giften breder sig hver runde – helst hen mod jeres nyeste ord. Dæk felterne (og tag straffen) eller ryd dem med sprængbrikker.', 'Ordslugeren forbander nogle gange en brik på jeres hænder, så den bliver rådden.']
   },
   territory: {
     name: 'Erobringen', tag: 'Territorium', N: 13,
-    blurb: 'Ordæderen breder sig med lange ord. Hav flest brikker på brættet til sidst.',
+    blurb: 'Ordslugeren breder sig med lange ord. Hav flest brikker på brættet til sidst.',
     init(st) { st.roundLimit = TUNE.territory.limit; },
-    goalText: st => `Hav flere brikker på brættet end Ordæderen, når ${st.roundLimit} runder er gået.`,
+    goalText: st => `Hav flere brikker på brættet end Ordslugeren, når ${st.roundLimit} runder er gået.`,
     plan(st) { const p = [['word', 'sprawl']]; if (RNG() < tn(st, TUNE.territory.second)) p.push(['word', 'sprawl']); if (chance(st, 0.2)) p.push(['rock', 1]); return p; },
     progress: st => { const c = countTiles(st); return { a: c.team, b: c.eater, kind: 'tiles' }; },
     win: st => false, lose: st => false,
     final: st => { const c = countTiles(st); return c.team > c.eater; },
-    rules: ['Point tæller ikke her – kun antal brikker på brættet.', 'Ordæderen lægger et eller to lange ord hver runde.', 'Runer og bomber findes ikke i dette scenarie.']
+    rules: ['Point tæller ikke her – kun antal brikker på brættet.', 'Ordslugeren lægger et eller to lange ord hver runde.', 'Runer og bomber findes ikke i dette scenarie.']
   },
   chaos: {
     name: 'Stormen', tag: 'Alt på én gang', N: 15, lives: 3,
@@ -2148,18 +2148,18 @@ const SCEN = {
     win: st => st.team >= st.goal.target,
     lose: st => st.lives <= 0,
     final: st => st.team >= st.goal.target && st.lives > 0,
-    rules: ['Alle Ordæderens tricks er i spil, og antallet af angreb stiger hver fjerde runde.', 'Bomber koster liv. Runer giver dobbelt point og +10.', 'Ordæderen kan også spise et bogstav fra jeres seneste ord.']
+    rules: ['Alle Ordslugerens tricks er i spil, og antallet af angreb stiger hver fjerde runde.', 'Bomber koster liv. Runer giver dobbelt point og +10.', 'Ordslugeren kan også spise et bogstav fra jeres seneste ord.']
   },
   train: {
     name: 'Træningslejren', tag: 'Rolig start', N: 15,
-    blurb: 'Lær brikkerne og felterne at kende. Ordæderen er doven.',
+    blurb: 'Lær brikkerne og felterne at kende. Ordslugeren er doven.',
     init(st) { st.goal.target = S(st, tn(st, TUNE.train.target) * (st.N <= 9 ? 0.85 : 1)); },
     goalText: st => `Nå ${st.goal.target} point, før posen er tom.`,
     plan(st) { return st.round % 3 === 0 ? [['word', 'calm']] : []; },
     progress: st => ({ a: st.team, max: st.goal.target, kind: 'points' }),
     win: st => st.team >= st.goal.target, lose: st => false,
     final: st => st.team >= st.goal.target,
-    rules: ['Ordæderen lægger kun et stille ord hver tredje runde.', 'Godt sted at prøve guldbrikker, rygsække og stafetter af.']
+    rules: ['Ordslugeren lægger kun et stille ord hver tredje runde.', 'Godt sted at prøve guldbrikker, rygsække og stafetter af.']
   }
 };
 function countTiles(st) { let team = 0, eater = 0; for (const t of st.board) if (t) { if (t.o === 'e') eater++; else if (t.o === 'p0' || t.o === 'p1') team++; } return { team, eater }; }
@@ -2174,7 +2174,7 @@ function checkEnd(st) {
 }
 function finish(st, won, why) {
   st.over = true; st.result = won ? 'win' : 'lose';
-  st.resultText = why || (won ? 'I slog Ordæderen!' : 'Ordæderen vandt denne gang.');
+  st.resultText = why || (won ? 'I slog Ordslugeren!' : 'Ordslugeren vandt denne gang.');
   log(st, 'sys', st.resultText);
   return true;
 }
@@ -2539,7 +2539,7 @@ G.Engine = {
 
 </script>
 <script>
-/* Ordæderen – net.js
+/* Ordslugeren – net.js
  * Online-synk via claude.ai artifact `db` + `user`, lokal solo-gem og chat.
  * Falder tilbage til en mock-backend (localStorage + BroadcastChannel) når db mangler.
  * Ingen DOM, ingen eksterne biblioteker. Global: window.Net
@@ -3286,7 +3286,7 @@ G.Engine = {
   function loadGhCfg() {
     try { var c = JSON.parse(lsGet(LS_GH) || 'null'); return validCfg(c) ? c : null; } catch (e) { return null; }
   }
-  function genNtfyBase() { return 'ordaederen-' + rnd(8); }
+  function genNtfyBase() { return 'ordslugeren-' + rnd(8); }
   function normCfg(inp, old) {
     inp = inp || {}; old = old || {};
     var owner = String(inp.owner || '').trim(), repo = String(inp.repo || '').trim();
@@ -3458,7 +3458,7 @@ G.Engine = {
   async function ntfySend(topic, message, gameId) {
     if (!topic || !gh.cfg) return { ok: false, err: 'Intet emne.' };
     var server = gh.cfg.ntfyServer || NTFY_SERVER;
-    var body = { topic: topic, title: 'Ordæderen', message: message, tags: ['game_die'] };
+    var body = { topic: topic, title: 'Ordslugeren', message: message, tags: ['game_die'] };
     var su = siteUrl();
     if (su) body.click = su + (gameId ? '#game=' + gameId : '');
     try {
@@ -3488,7 +3488,7 @@ G.Engine = {
     var partner = partnerOf(doc);
     if (!partner) return null;
     if (st.over && !(prevSt && prevSt.over)) {
-      return (st.result === 'win' ? 'I vandt!' : 'Ordæderen vandt denne gang.') + (st.resultText ? ' ' + st.resultText : '');
+      return (st.result === 'win' ? 'I vandt!' : 'Ordslugeren vandt denne gang.') + (st.resultText ? ' ' + st.resultText : '');
     }
     var mi = doc.p0 === uid ? 0 : 1;
     var o = st.offer, po = prevSt && prevSt.offer;
@@ -3743,7 +3743,7 @@ G.Engine = {
         var doc = Object.assign({ ver: 1, status: 'waiting', p0: uid, p1: '', upd: t, created: t,
           names: names, topics: topics, prefs: prefs }, metaFields(st), { s: JSON.stringify(st) });
         try {
-          var sha = await ghPut(gamePath(id), doc, null, 'Ordæderen: nyt spil ' + id);
+          var sha = await ghPut(gamePath(id), doc, null, 'Ordslugeren: nyt spil ' + id);
           ghOk(); afterWrite(id, doc, sha);
           return id;
         } catch (e) {
@@ -3773,7 +3773,7 @@ G.Engine = {
           return { doc: Object.assign({}, d, metaFields(st), {
             s: JSON.stringify(st), ver: (d.ver || 0) + 1, p1: uid, names: names, topics: topics, prefs: prefs,
             status: st.over ? 'over' : 'active', upd: now() }) };
-        }, 'Ordæderen: ' + id + ' – ny spiller');
+        }, 'Ordslugeren: ' + id + ' – ny spiller');
         if (!res.ok || !res.doc) return res;
         ghOk(); afterWrite(id, res.doc, res.sha);
         var d = res.doc;
@@ -3814,7 +3814,7 @@ G.Engine = {
           return { doc: Object.assign({}, d, metaFields(st), {
             s: JSON.stringify(st), ver: (d.ver || 0) + 1, upd: now(), names: names, topics: topics, prefs: prefs,
             status: st.over ? 'over' : (d.p1 ? 'active' : 'waiting') }) };
-        }, 'Ordæderen: ' + id + ' v' + (baseVer + 1));
+        }, 'Ordslugeren: ' + id + ' v' + (baseVer + 1));
         if (!res.ok || !res.doc) return res;
         ghOk(); afterWrite(id, res.doc, res.sha);
         // Notifikation – må aldrig vælte et commit
@@ -3837,7 +3837,7 @@ G.Engine = {
           if (msgs.some(function (m) { return m.id === mid; })) return { abort: { ok: true, id: mid } };
           msgs.push({ id: mid, uid: uid, text: txt, t: t });
           return { doc: { msgs: msgs.slice(-CHAT_FILE_MAX) } };
-        }, 'Ordæderen: chat ' + id);
+        }, 'Ordslugeren: chat ' + id);
         if (!res.ok) return res;
         ghOk();
         if (res.doc && gh.chatW[id]) deliverChat(id, res.doc.msgs, res.sha || ('local' + t));
@@ -3880,7 +3880,7 @@ G.Engine = {
           var e = await ghRead(gamePath(id)), d = e.missing ? null : e.data;
           if (!d) break;
           if (d.p0 !== uid) return { ok: false, err: 'Kun den der oprettede spillet kan slette det.' };
-          try { await ghDel(gamePath(id), e.sha, 'Ordæderen: slet ' + id); break; }
+          try { await ghDel(gamePath(id), e.sha, 'Ordslugeren: slet ' + id); break; }
           catch (er) { if (er.code !== 'conflict') throw er; await sleep(200 + attempt * 300); }
         }
         ghOk();
@@ -3892,7 +3892,7 @@ G.Engine = {
         (async function () {
           try {
             var c = await ghRead(chatPath(id));
-            if (!c.missing && c.sha) await ghDel(chatPath(id), c.sha, 'Ordæderen: slet chat ' + id);
+            if (!c.missing && c.sha) await ghDel(chatPath(id), c.sha, 'Ordslugeren: slet chat ' + id);
           } catch (er2) {}
         })();
         pollSoon();
@@ -4062,7 +4062,7 @@ G.Engine = {
 
 </script>
 <script>
-/* Ordæderen – tekstindhold: regler, scenarie-stemning, replikker, tutorial, tips. Ren data, ingen DOM. */
+/* Ordslugeren – tekstindhold: regler, scenarie-stemning, replikker, tutorial, tips. Ren data, ingen DOM. */
 (function (G) {
 'use strict';
 
@@ -4074,17 +4074,17 @@ const rules = [
   {
     id: 'idea', title: 'Grundideen',
     paragraphs: [
-      'I to spiller på samme hold. Modstanderen er Ordæderen, en gammel stentrold med en umættelig appetit på bogstaver.',
-      'I lægger ord på et fælles bræt og samler point i en fælles pulje. Ordæderen prøver at spænde ben med sine egne ord, forhindringer og små fiksfakserier.',
+      'I to spiller på samme hold. Modstanderen er Ordslugeren, en gammel stentrold med en umættelig appetit på bogstaver.',
+      'I lægger ord på et fælles bræt og samler point i en fælles pulje. Ordslugeren prøver at spænde ben med sine egne ord, forhindringer og små fiksfakserier.',
       'Hvert scenarie har sit eget mål. Det står altid øverst på skærmen sammen med, hvor langt I er nået.'
     ]
   },
   {
     id: 'round', title: 'En runde',
     paragraphs: [
-      'En runde har tre ture: først spiller 1, så spiller 2 og til sidst Ordæderen.',
+      'En runde har tre ture: først spiller 1, så spiller 2 og til sidst Ordslugeren.',
       'På din tur kan du lægge et ord, bytte brikker eller melde pas. Du må også give én brik til din makker, før du gør dit træk.',
-      'Når I begge har haft jeres tur, er det Ordæderens tur. Den lægger ord, sætter forhindringer, og bombernes lunter brænder ned.',
+      'Når I begge har haft jeres tur, er det Ordslugerens tur. Den lægger ord, sætter forhindringer, og bombernes lunter brænder ned.',
       'I spiller i jeres eget tempo. Spillet venter pænt, til det er din tur igen.'
     ]
   },
@@ -4092,7 +4092,7 @@ const rules = [
     id: 'words', title: 'At lægge ord',
     paragraphs: [
       'Det fungerer som Wordfeud: Træk brikker fra hånden ud på brættet i én række eller én kolonne, uden huller imellem.',
-      'Ordæderen lægger altid spillets første ord. Jeres ord skal hænge sammen med brikker, der allerede ligger på brættet.',
+      'Ordslugeren lægger altid spillets første ord. Jeres ord skal hænge sammen med brikker, der allerede ligger på brættet.',
       'Alle ord, der opstår i trækket, også dem på tværs, skal stå i ordbogen. Ordbogen er Stavekontrolden, som bygger på Dansk Sprognævns retskrivning. Bøjede former som HUSENE og LØB er med.',
       'Mens du lægger, viser spillet, hvor mange point trækket giver. Er et ord ukendt, får du besked, før noget bliver sendt.'
     ]
@@ -4139,9 +4139,9 @@ const rules = [
     ]
   },
   {
-    id: 'hazards', title: 'Ordæderens forhindringer',
+    id: 'hazards', title: 'Ordslugerens forhindringer',
     paragraphs: [
-      'På sin tur lægger Ordæderen ikke kun ord. Den drysser også forhindringer ud, helst på de bedste felter.',
+      'På sin tur lægger Ordslugeren ikke kun ord. Den drysser også forhindringer ud, helst på de bedste felter.',
       'Den kan også forbande en brik på jeres hånd, så den bliver rådden, eller stjæle et par brikker og smide dem tilbage i posen.'
     ],
     items: [
@@ -4174,7 +4174,7 @@ const rules = [
     items: [
       { key: 'give', name: 'Byt en brik med makker', text: 'Én gang pr. tur kan du tilbyde din makker en af dine brikker. Makkeren vælger enten at sige nej tak eller at give en af sine egne brikker til gengæld, så I altid har lige mange brikker. Det afslutter ikke din tur.' },
       { key: 'open', name: 'Åbne hænder', text: 'I kan se hinandens brikker. Med variationen Lukkede hænder er de skjult, og I kan ikke give brikker væk.' },
-      { key: 'chat', name: 'Chat', text: 'Skriv sammen undervejs. Planlæg, ros hinanden, og skæld ud på Ordæderen.' },
+      { key: 'chat', name: 'Chat', text: 'Skriv sammen undervejs. Planlæg, ros hinanden, og skæld ud på Ordslugeren.' },
       { key: 'hint', name: 'Hint', text: 'Et hint viser et godt træk med dine brikker. Der er 5 pr. spil på Let, 3 på Normal og Svær og kun 1 på Mareridt.' }
     ]
   },
@@ -4182,7 +4182,7 @@ const rules = [
     id: 'winlose', title: 'At vinde og tabe',
     paragraphs: [
       'I vinder, når scenariets mål er nået. Målet og jeres fremskridt står øverst på skærmen.',
-      'I taber, hvis Ordæderen når sit mål først, hvis I løber tør for liv, eller hvis runderne slipper op, før målet er nået.',
+      'I taber, hvis Ordslugeren når sit mål først, hvis I løber tør for liv, eller hvis runderne slipper op, før målet er nået.',
       'Spillet slutter også, når posen er tom og brikkerne er brugt, eller når I har meldt pas eller byttet fire gange i træk. Så afgør stillingen, hvem der vandt.'
     ]
   }
@@ -4191,15 +4191,15 @@ const rules = [
 // ------------------------------------------------------------------ scenarier
 const scenarios = {
   race: {
-    intro: 'Ordæderen er mødt op med sin egen pose bogstaver og en meget stor serviet. Den lægger to ord hver runde og tæller sine point højt. Kom først i mål, før den æder sig derhen.',
+    intro: 'Ordslugeren er mødt op med sin egen pose bogstaver og en meget stor serviet. Den lægger to ord hver runde og tæller sine point højt. Kom først i mål, før den æder sig derhen.',
     tips: [
-      'Ordæderen scorer hver runde. Jeres bedste forsvar er store træk.',
-      'Pas på med at åbne vejen til TO-felter. Ordæderen tager dem gerne.',
+      'Ordslugeren scorer hver runde. Jeres bedste forsvar er store træk.',
+      'Pas på med at åbne vejen til TO-felter. Ordslugeren tager dem gerne.',
       'Gem stafetten til et træk, hvor makkeren har en stærk hånd.'
     ]
   },
   bombs: {
-    intro: 'Det er mørkt, og Ordæderen har fundet tændstikkerne. Rundt om på brættet ulmer bomber med korte lunter. Hold hovedet koldt og brikkerne klar.',
+    intro: 'Det er mørkt, og Ordslugeren har fundet tændstikkerne. Rundt om på brættet ulmer bomber med korte lunter. Hold hovedet koldt og brikkerne klar.',
     tips: [
       'Tallet på bomben viser, hvor mange runder der er tilbage. Tag den laveste først.',
       'En desarmeret bombe giver 15 point, så det er ikke kun forsvar.',
@@ -4207,7 +4207,7 @@ const scenarios = {
     ]
   },
   runes: {
-    intro: 'Ordæderen har fundet en gammel runesten og hamrer bogstaver fast i brættet. Hver rune lukker felterne omkring sig med et segl. Bryd dem alle, før tiden løber ud.',
+    intro: 'Ordslugeren har fundet en gammel runesten og hamrer bogstaver fast i brættet. Hver rune lukker felterne omkring sig med et segl. Bryd dem alle, før tiden løber ud.',
     tips: [
       'Et ord gennem en rune tæller dobbelt og giver 10 point ekstra.',
       'Byg en vej hen mod den næste rune et træk i forvejen.',
@@ -4215,15 +4215,15 @@ const scenarios = {
     ]
   },
   bridge: {
-    intro: 'To fyrtårne lyser i hver sin side af brættet, og imellem dem er der kun tom luft. Byg en bro af bogstaver, før Ordæderen får stablet sine klipper i vejen.',
+    intro: 'To fyrtårne lyser i hver sin side af brættet, og imellem dem er der kun tom luft. Byg en bro af bogstaver, før Ordslugeren får stablet sine klipper i vejen.',
     tips: [
       'Lange ord i den rigtige retning flytter jer længst.',
-      'Ordæderens egne brikker tæller også med i broen.',
+      'Ordslugerens egne brikker tæller også med i broen.',
       'Gem sprængbrikkerne til klipper på den korteste vej.'
     ]
   },
   missions: {
-    intro: 'Ordæderen har skrevet en lille liste med opgaver og er overbevist om, at I ikke kan klare dem. Bevis det modsatte, før runderne slipper op.',
+    intro: 'Ordslugeren har skrevet en lille liste med opgaver og er overbevist om, at I ikke kan klare dem. Bevis det modsatte, før runderne slipper op.',
     tips: [
       'Begge spillere kan løse alle missioner.',
       'Aftal i chatten, hvem der har brikkerne til hvilken mission.',
@@ -4231,7 +4231,7 @@ const scenarios = {
     ]
   },
   plague: {
-    intro: 'Ordæderen har spildt noget grimt grønt på brættet, og det breder sig. Giften æder point, og afgrundene sluger hele ord. Scor nok alligevel.',
+    intro: 'Ordslugeren har spildt noget grimt grønt på brættet, og det breder sig. Giften æder point, og afgrundene sluger hele ord. Scor nok alligevel.',
     tips: [
       'Dæk giftfelter med billige bogstaver, så straffen bliver lille.',
       'Hold jer fra afgrunde, medmindre ordet er lille.',
@@ -4239,15 +4239,15 @@ const scenarios = {
     ]
   },
   territory: {
-    intro: 'Ordæderen vil have hele brættet for sig selv og breder sig med lange, magre ord. Point er ligegyldige her. Det handler om plads.',
+    intro: 'Ordslugeren vil have hele brættet for sig selv og breder sig med lange, magre ord. Point er ligegyldige her. Det handler om plads.',
     tips: [
       'Mange brikker slår høje point. Læg lange ord med billige bogstaver.',
-      'Byg videre på Ordæderens ord, og tag felterne foran den.',
+      'Byg videre på Ordslugerens ord, og tag felterne foran den.',
       'En rygsæk giver flere brikker på hånden og dermed længere ord.'
     ]
   },
   chaos: {
-    intro: 'Ordæderen har vendt hele trickkassen på hovedet. Bomber, runer, gift, is og tyveri, og det tager til hver fjerde runde. Hold sammen, og hold ud.',
+    intro: 'Ordslugeren har vendt hele trickkassen på hovedet. Bomber, runer, gift, is og tyveri, og det tager til hver fjerde runde. Hold sammen, og hold ud.',
     tips: [
       'Tag bomberne først. De koster liv.',
       'Brug runerne, når I kan. De giver dobbelt point og 10 ekstra.',
@@ -4255,7 +4255,7 @@ const scenarios = {
     ]
   },
   train: {
-    intro: 'Ordæderen har spist for meget og ligger mest og fordøjer. Den lægger kun et stille ord en gang imellem. Perfekt til at lære felterne og brikkerne at kende.',
+    intro: 'Ordslugeren har spist for meget og ligger mest og fordøjer. Den lægger kun et stille ord en gang imellem. Perfekt til at lære felterne og brikkerne at kende.',
     tips: [
       'Tag en rygsæk tidligt. Den gælder resten af spillet.',
       'Læg en stafet, og lad makkeren tage det store træk.',
@@ -4264,7 +4264,7 @@ const scenarios = {
   }
 };
 
-// ------------------------------------------------------------------ Ordæderen
+// ------------------------------------------------------------------ Ordslugeren
 const eater = {
   open: [
     'Nå, der er I. Jeg har dækket bord.',
@@ -4493,7 +4493,7 @@ const buddy = {
     'Hej! Sig til, hvis du mangler en brik.',
     'Godt at spille med dig igen.',
     'Vi holder sammen, så klarer vi den.',
-    'Den Ordæder ser sulten ud. Lad os give den faste.',
+    'Den Ordsluger ser sulten ud. Lad os give den faste.',
     'Jeg er med. Bare sig til, hvad du har brug for.',
     'Lad os tage den med ro og spille klogt.'
   ],
@@ -4544,7 +4544,7 @@ const buddy = {
   praiseBig: [
     'WOW! Hvor fandt du lige det?',
     'Det var et kæmpetræk!',
-    'Der fik Ordæderen noget at tygge på.',
+    'Der fik Ordslugeren noget at tygge på.',
     'Du er i topform i dag!',
     'Jeg tror, monsteret lige tabte skeen.',
     'Sikke et ord! Jeg er målløs.',
@@ -4566,7 +4566,7 @@ const buddy = {
     'Rune brudt! Dobbelt point.',
     'Jeg knækkede en rune.',
     'Det segl er væk. Der er plads igen.',
-    'Runen er brudt. Nu er Ordæderen sur.',
+    'Runen er brudt. Nu er Ordslugeren sur.',
     'Én rune mindre. Hvor er den næste?',
     'Knæk! Den rune er historie.',
     'Jeg fik runen med i ordet. 10 point ekstra.',
@@ -4624,7 +4624,7 @@ const buddy = {
   win: [
     'VI VANDT! Giv mig fem!',
     'Vi klarede det! Sikke et hold.',
-    'Ordæderen må gå sulten i seng i aften.',
+    'Ordslugeren må gå sulten i seng i aften.',
     'Sejr! Jeg vidste, vi kunne.',
     'Det var vores bedste spil til dato. Måske.',
     'Tak for et godt spil, makker!',
@@ -4635,7 +4635,7 @@ const buddy = {
     'Øv. Næste gang tager vi den.',
     'Den var tæt på. Vi får den næste gang.',
     'Godt kæmpet, makker.',
-    'Ordæderen var for sulten i dag.',
+    'Ordslugeren var for sulten i dag.',
     'Vi tabte, men det var sjovt.',
     'Revanche? Jeg er klar.',
     'Den slap vi ikke godt fra. Igen?',
@@ -4662,23 +4662,23 @@ const buddyKeys = [
   { w: ['hjælp*', 'sidder fast', 'vokal*', 'giv mig', 'brik til mig'], lines: ['Jeg kigger på mine brikker. Ellers kan et hint hjælpe dig videre.', 'Vi kan bytte en brik. Sig til, hvilket bogstav du mangler.', 'Prøv et hint, hvis du sidder fast. Det er det, de er til.', 'Kig efter et sted, hvor du kan hægte et kort ord på.'] },
   { w: ['bombe*', 'lunte*'], lines: ['Ja, den skal dækkes, før lunten løber ud.', 'Tag den med det laveste tal først.', 'Jeg holder øje med bomberne. Tag du den nærmeste.', 'En desarmeret bombe giver 15 point. Den er værd at tage.'] },
   { w: ['rune*', 'segl*', 'forseglet'], lines: ['Husk, et ord gennem runen tæller dobbelt.', 'Runen skal med i ordet, hvis du lægger ved siden af den.', 'Lad os tage den næste rune sammen.', 'Runer giver 10 point ekstra. Gode at få med.'] },
-  { w: ['gift*', 'afgrund*', 'klippe*', 'is', 'isen'], lines: ['Undgå det felt, hvis du kan.', 'En sprængbrik ville være rar lige nu.', 'Ordæderen elsker at lægge den slags på de gode felter.'] },
+  { w: ['gift*', 'afgrund*', 'klippe*', 'is', 'isen'], lines: ['Undgå det felt, hvis du kan.', 'En sprængbrik ville være rar lige nu.', 'Ordslugeren elsker at lægge den slags på de gode felter.'] },
   { w: ['godt', 'flot*', 'sejt', 'super', 'fedt', 'nice', 'wow', 'fantastisk', 'dejligt', 'sådan'], lines: ['Tak! Du er nu heller ikke så ringe.', 'Vi er et godt hold.', 'Det går den rigtige vej!', 'Tak, makker!'] },
   { w: ['øv', 'av', 'nej', 'ærgerligt', 'pokkers', 'pis', 'argh', 'suk'], lines: ['Pyt, vi tager den igen.', 'Rolig nu, vi er stadig med.', 'Det sker. Næste træk bliver bedre.', 'Øv ja. Men vi giver ikke op.'] },
-  { w: ['ordæder*', 'monster*', 'trold*'], lines: ['Trolden? Den skal nok få kamp til stregen.', 'Den er grådig, men vi er klogere.', 'Lad den bare tygge. Vi vinder alligevel.'] },
+  { w: ['ordsluger*', 'monster*', 'trold*'], lines: ['Trolden? Den skal nok få kamp til stregen.', 'Den er grådig, men vi er klogere.', 'Lad den bare tygge. Vi vinder alligevel.'] },
   { w: ['haha*', 'hehe*', 'lol', 'hihi*'], lines: ['Haha!', 'Hehe, ja.', 'Det var sjovt.'] },
   { w: ['elsker', 'kys', 'kram', '<3'], lines: ['Åh, i lige måde! Men nu skal vi også vinde.', 'Kram tilbage. Fokus nu!'] }
 ];
 
 // ------------------------------------------------------------------ tutorial
 const tutorial = [
-  { target: 'eater', title: 'Mød Ordæderen', text: 'Den gamle stentrold er jeres fælles modstander. Når I begge har lagt, tager det sin tur og laver ballade på brættet.' },
+  { target: 'eater', title: 'Mød Ordslugeren', text: 'Den gamle stentrold er jeres fælles modstander. Når I begge har lagt, tager det sin tur og laver ballade på brættet.' },
   { target: 'goal', title: 'Jeres mål', text: 'Her står scenariets mål, og hvor langt I er nået. Hold øje med point, runder og liv.' },
-  { target: 'board', title: 'Brættet', text: 'Felter med DB, TB, DO og TO giver bonus (B = bogstav, O = ord). Klipper, is, gift, afgrunde og bomber er Ordæderens forhindringer.' },
+  { target: 'board', title: 'Brættet', text: 'Felter med DB, TB, DO og TO giver bonus (B = bogstav, O = ord). Klipper, is, gift, afgrunde og bomber er Ordslugerens forhindringer.' },
   { target: 'rack', title: 'Din hånd', text: 'Træk brikkerne op på brættet. Tallet i hjørnet er brikkens værdi. Guld og sølv ganger hele ordet.' },
   { target: 'play', title: 'Læg ordet', text: 'Pointene vises, mens du lægger. Når du er tilfreds, trykker du her. Du kan også bytte brikker eller melde pas.' },
   { target: 'partner', title: 'Din makker', text: 'Her ser du makkerens brikker. Du kan give én brik pr. tur, og det koster ikke din tur.' },
-  { target: 'chat', title: 'Chat', text: 'Skriv sammen, planlæg næste træk, og skæld lidt ud på Ordæderen.' },
+  { target: 'chat', title: 'Chat', text: 'Skriv sammen, planlæg næste træk, og skæld lidt ud på Ordslugeren.' },
   { target: 'hint', title: 'Hint', text: 'Sidder du fast, viser et hint et godt træk. Der er kun et par stykker pr. spil, så brug dem med omtanke.' }
 ];
 
@@ -4702,26 +4702,26 @@ const tips = [
   'Med lille hånd er det lettere at tømme hånden og få bonus.',
   'Skattekisten gør din næste trukne brik til en guldbrik.',
   'C, X og Z er de dyreste bogstaver med 8 point hver.',
-  'I Broen tæller Ordæderens egne brikker også med i kæden.',
+  'I Broen tæller Ordslugerens egne brikker også med i kæden.',
   'Fire pas eller byt i træk afslutter spillet.'
 ];
 
 // ------------------------------------------------------------------ slutskærm
 const endings = {
   win: [
-    { title: 'I slog Ordæderen!', text: '{team} point og et monster, der må gå sulten i seng.' },
-    { title: 'Sejr!', text: 'Ordæderen må nøjes med krummerne. I endte på {team} point.' },
-    { title: 'Bordet er ryddet', text: 'I spiste Ordæderens portion. {team} point i alt.' },
-    { title: 'Sikke et hold', text: 'Sammen nåede I {team} point. Ordæderen surmuler i et hjørne.' },
-    { title: 'Godt spillet!', text: 'Ordæderen har pakket skeen væk. I sluttede på {team} point.' },
+    { title: 'I slog Ordslugeren!', text: '{team} point og et monster, der må gå sulten i seng.' },
+    { title: 'Sejr!', text: 'Ordslugeren må nøjes med krummerne. I endte på {team} point.' },
+    { title: 'Bordet er ryddet', text: 'I spiste Ordslugerens portion. {team} point i alt.' },
+    { title: 'Sikke et hold', text: 'Sammen nåede I {team} point. Ordslugeren surmuler i et hjørne.' },
+    { title: 'Godt spillet!', text: 'Ordslugeren har pakket skeen væk. I sluttede på {team} point.' },
     { title: 'Bogstaverne er reddet', text: 'Alle ord er i sikkerhed, og I fik {team} point.' }
   ],
   lose: [
-    { title: 'Ordæderen vandt', text: 'Den slikker sig om munden. I nåede {team} point.' },
+    { title: 'Ordslugeren vandt', text: 'Den slikker sig om munden. I nåede {team} point.' },
     { title: 'Tak for maden, sagde monsteret', text: 'I kom op på {team} point. Næste gang tager I den.' },
-    { title: 'Ædt op', text: 'Det blev til {team} point, men Ordæderen var hurtigere.' },
+    { title: 'Ædt op', text: 'Det blev til {team} point, men Ordslugeren var hurtigere.' },
     { title: 'Så tæt på', text: '{team} point var ikke helt nok denne gang.' },
-    { title: 'Monsteret er mæt', text: 'Ordæderen bøvser tilfreds. I sluttede på {team} point.' },
+    { title: 'Monsteret er mæt', text: 'Ordslugeren bøvser tilfreds. I sluttede på {team} point.' },
     { title: 'Revanche?', text: '{team} point og en sulten modstander. Prøv igen.' }
   ]
 };
@@ -4877,39 +4877,39 @@ const Content = {
 // nøgle → { title, text, why?, place? }.  title er tingens navn; opdag-kortet viser "Nyt: {title}".
 // text = hvad det er, why = hvorfor det dukker op nu, place = hvad der sker hvis man lægger en brik der.
 Content.explain = {
-  board: { title: 'Brættet', text: 'De farvede felter giver bonus, når de bliver dækket. De blå felter ganger bogstavet, de rosa felter ganger hele ordet.', why: 'Det er dit første spil, så her er en kort oversigt.', place: 'Bonussen gælder kun i det træk, hvor feltet bliver dækket.' },
+  board: { title: 'Brættet', text: 'De farvede felter giver bonus, når de bliver dækket. De blå felter ganger bogstavet, de orange og røde felter ganger hele ordet.', why: 'Det er dit første spil, så her er en kort oversigt.', place: 'Bonussen gælder kun i det træk, hvor feltet bliver dækket.' },
   'prem:dl': { title: 'DB – dobbelt bogstav', text: 'Bogstavet på feltet tæller dobbelt.', place: 'Læg et dyrt bogstav her.' },
   'prem:tl': { title: 'TB – tredobbelt bogstav', text: 'Bogstavet på feltet tæller tre gange.', place: 'Et X eller Z her giver 24 point alene.' },
   'prem:ql': { title: 'FB – firdobbelt bogstav', text: 'Bogstavet på feltet tæller fire gange. Feltet er sjældent.', place: 'Gem gerne et dyrt bogstav til det.' },
   'prem:dw': { title: 'DO – dobbelt ord', text: 'Hele ordet tæller dobbelt.', place: 'Dækker ordet to ordfelter, ganges de sammen.' },
-  'prem:tw': { title: 'TO – tredobbelt ord', text: 'Hele ordet tæller tre gange. Det er brættets stærkeste felt.', place: 'Ordæderen prøver gerne at spærre det.' },
+  'prem:tw': { title: 'TO – tredobbelt ord', text: 'Hele ordet tæller tre gange. Det er brættets stærkeste felt.', place: 'Ordslugeren prøver gerne at spærre det.' },
   'prem:hand': { title: 'Rygsæk', text: 'Et specialfelt, der giver mere plads på hånden.', why: 'Rygsækken ligger på brættet fra start og kan kun bruges én gang.', place: 'Lægger du en brik her, får du plads til én brik mere på hånden resten af spillet (højst 10).' },
   'prem:chest': { title: 'Skattekiste', text: 'Et specialfelt med en belønning.', why: 'Kisten ligger på brættet fra start og kan kun bruges én gang.', place: 'Lægger du en brik her, bliver den næste brik, du trækker, en guldbrik. Guld får ordet til at tælle tre gange.' },
   'prem:relay': { title: 'Stafet', text: 'Et specialfelt til samarbejde.', why: 'Stafetten ligger på brættet fra start og kan kun bruges én gang.', place: 'Lægger du en brik her, tæller din makkers næste træk dobbelt.' },
   'prem:time': { title: 'Timeglas', text: 'Et specialfelt, der giver ekstra tid.', why: 'Timeglasset ligger på brættet fra start og kan kun bruges én gang.', place: 'Lægger du en brik her, får I én runde mere at spille på.' },
-  'prem:portal': { title: 'Fyrtårn', text: 'De to fyrtårne er målet i Broen.', why: 'I skal forbinde dem med en sammenhængende kæde af brikker.', place: 'Begge fyrtårne skal dækkes. Alle brikker tæller, også Ordæderens.' },
-  'haz:rock': { title: 'Klippe', text: 'Et spærret felt.', why: 'Ordæderen ruller klipper ind på gode felter og i jeres vej.', place: 'Her kan du ikke lægge en brik. En sprængbrik ved siden af kan fjerne klippen.' },
-  'haz:ice': { title: 'Is', text: 'Et frosset felt. Tallet viser, hvor mange runder isen holder.', why: 'Ordæderen fryser de felter, I gerne vil bruge.', place: 'Her kan du ikke lægge en brik, før isen er smeltet.' },
-  'haz:poison': { title: 'Gift', text: 'Et forgiftet felt.', why: 'Ordæderen drypper gift tæt på jeres brikker, og i nogle scenarier breder den sig.', place: 'Lægger du en brik her, tæller bogstavet minus dobbelt. Giften forsvinder bagefter.' },
-  'haz:void': { title: 'Afgrund', text: 'Et sort hul i brættet.', why: 'Ordæderen river afgrunde op tæt på jeres ord.', place: 'Lægger du en brik her, bliver hele ordets score negativ. Afgrunden lukkes bagefter.' },
-  'haz:bomb': { title: 'Bombe', text: 'Tallet viser, hvor mange runder lunten har tilbage.', why: 'Ordæderen har lagt en bombe tæt på jeres brikker.', place: 'Læg en brik på bomben for at desarmere den og få 15 point. Springer den, forsvinder bogstaverne omkring den.' },
-  rune: { title: 'Rune', text: 'Et fast, mørkt bogstav med gyldent omrids. Runer kan ikke sprænges væk.', why: 'Ordæderen sætter runer for at forsegle felterne omkring dem.', place: 'Bygger du et ord gennem runen, tæller ordet dobbelt og giver 10 point ekstra. Så er runen brudt.' },
+  'prem:portal': { title: 'Fyrtårn', text: 'De to fyrtårne er målet i Broen.', why: 'I skal forbinde dem med en sammenhængende kæde af brikker.', place: 'Begge fyrtårne skal dækkes. Alle brikker tæller, også Ordslugerens.' },
+  'haz:rock': { title: 'Klippe', text: 'Et spærret felt.', why: 'Ordslugeren ruller klipper ind på gode felter og i jeres vej.', place: 'Her kan du ikke lægge en brik. En sprængbrik ved siden af kan fjerne klippen.' },
+  'haz:ice': { title: 'Is', text: 'Et frosset felt. Tallet viser, hvor mange runder isen holder.', why: 'Ordslugeren fryser de felter, I gerne vil bruge.', place: 'Her kan du ikke lægge en brik, før isen er smeltet.' },
+  'haz:poison': { title: 'Gift', text: 'Et forgiftet felt.', why: 'Ordslugeren drypper gift tæt på jeres brikker, og i nogle scenarier breder den sig.', place: 'Lægger du en brik her, tæller bogstavet minus dobbelt. Giften forsvinder bagefter.' },
+  'haz:void': { title: 'Afgrund', text: 'Et sort hul i brættet.', why: 'Ordslugeren river afgrunde op tæt på jeres ord.', place: 'Lægger du en brik her, bliver hele ordets score negativ. Afgrunden lukkes bagefter.' },
+  'haz:bomb': { title: 'Bombe', text: 'Tallet viser, hvor mange runder lunten har tilbage.', why: 'Ordslugeren har lagt en bombe tæt på jeres brikker.', place: 'Læg en brik på bomben for at desarmere den og få 15 point. Springer den, forsvinder bogstaverne omkring den.' },
+  rune: { title: 'Rune', text: 'Et fast, mørkt bogstav med gyldent omrids. Runer kan ikke sprænges væk.', why: 'Ordslugeren sætter runer for at forsegle felterne omkring dem.', place: 'Bygger du et ord gennem runen, tæller ordet dobbelt og giver 10 point ekstra. Så er runen brudt.' },
   sealed: { title: 'Forseglet felt', text: 'Felter med prikket guldkant ligger lige ved siden af en rune.', why: 'En rune forsegler de fire felter omkring sig.', place: 'Lægger du en brik her, skal dit ord gå gennem runen. Ellers er trækket ikke gyldigt.' },
   'kind:gold': { title: 'Guldbrik', text: 'En brik med guldglans og ×3 i hjørnet.', why: 'Du har trukket en guldbrik fra posen.', place: 'Hvert ord, guldbrikken indgår i, tæller tre gange.' },
   'kind:silver': { title: 'Sølvbrik', text: 'En sølvgrå brik med ×2 i hjørnet.', why: 'Du har trukket en sølvbrik fra posen.', place: 'Hvert ord, sølvbrikken indgår i, tæller dobbelt.' },
-  'kind:rot': { title: 'Rådden brik', text: 'En grønlig, plettet brik.', why: 'Der ligger rådne brikker i posen, og Ordæderen kan forbande jeres brikker.', place: 'Hvert ord med den rådne brik tæller kun halvt. Brug den i et kort ord, eller byt den væk.' },
+  'kind:rot': { title: 'Rådden brik', text: 'En grønlig, plettet brik.', why: 'Der ligger rådne brikker i posen, og Ordslugeren kan forbande jeres brikker.', place: 'Hvert ord med den rådne brik tæller kun halvt. Brug den i et kort ord, eller byt den væk.' },
   'kind:blast': { title: 'Sprængbrik', text: 'En brik med en lille gnist i hjørnet.', why: 'Du har trukket en sprængbrik fra posen.', place: 'Når du lægger den, ryddes klipper, is, gift, afgrunde og bomber på de otte felter rundt om den.' },
   'kind:blank': { title: 'Blank brik', text: 'En brik uden bogstav.', why: 'Du har trukket en blank brik fra posen.', place: 'Den kan være et hvilket som helst bogstav. Du vælger, når du lægger den. Den giver 0 point.' },
   'tile:own': { title: 'Jeres brikker', text: 'Lyse brikker med mørk skrift. Dine og din makkers har hver sin tone.' },
-  'tile:eater': { title: 'Ordæderens brikker', text: 'Sorte brikker med hvid skrift og hvid ramme. I må gerne bygge videre på dem.' },
+  'tile:eater': { title: 'Ordslugerens brikker', text: 'Sorte brikker med hvid skrift og hvid ramme. I må gerne bygge videre på dem.' },
   'ev:hand': { title: 'Større hånd', text: 'Du har nu plads til {n} brikker i stedet for {m}.', why: 'Det er fordi du lagde en brik på Rygsæk-feltet.', place: 'Fra nu af fylder du op til {n} brikker efter hvert træk.' },
   'ev:handPartner': { title: 'Større hånd hos din makker', text: '{name} har nu plads til {n} brikker i stedet for {m}.', why: 'Det er fordi {name} lagde en brik på Rygsæk-feltet.' },
   'ev:chest': { title: 'Skattekisten er åbnet', text: 'Den næste brik, {name} trækker, bliver en guldbrik.', why: 'Det er fordi {name} lagde en brik på skattekisten.' },
   'ev:relay': { title: 'Stafetten er givet videre', text: '{partner}s næste træk tæller dobbelt.', why: 'Det er fordi {name} lagde en brik på stafet-feltet.' },
   'ev:time': { title: 'En runde mere', text: 'I har fået én runde mere at spille på.', why: 'Det er fordi en brik blev lagt på timeglasset.' },
-  'ev:steal': { title: 'Ordæderen stjæler', text: 'Ordæderen tog nogle brikker fra en hånd og lagde dem tilbage i posen.', why: 'Det er et af dens tricks. Hånden fyldes op igen efter næste træk.' },
-  'ev:curse': { title: 'En forbandet brik', text: 'En af jeres brikker er blevet rådden.', why: 'Ordæderen forbandede den.', place: 'Ord med en rådden brik tæller kun halvt. Byt den væk, eller brug den i et kort ord.' },
-  'ev:eat': { title: 'Ordæderen spiser et bogstav', text: 'Et af jeres bogstaver er forsvundet fra brættet.', why: 'Ordæderen spiser gerne af det, I lige har lagt.', place: 'Feltet er tomt igen og kan bruges på ny.' },
+  'ev:steal': { title: 'Ordslugeren stjæler', text: 'Ordslugeren tog nogle brikker fra en hånd og lagde dem tilbage i posen.', why: 'Det er et af dens tricks. Hånden fyldes op igen efter næste træk.' },
+  'ev:curse': { title: 'En forbandet brik', text: 'En af jeres brikker er blevet rådden.', why: 'Ordslugeren forbandede den.', place: 'Ord med en rådden brik tæller kun halvt. Byt den væk, eller brug den i et kort ord.' },
+  'ev:eat': { title: 'Ordslugeren spiser et bogstav', text: 'Et af jeres bogstaver er forsvundet fra brættet.', why: 'Ordslugeren spiser gerne af det, I lige har lagt.', place: 'Feltet er tomt igen og kan bruges på ny.' },
   'ev:boom': { title: 'En bombe sprang', text: 'Bogstaverne omkring bomben forsvandt.', why: 'Lunten nåede 0, før nogen dækkede bomben. I mister et liv, eller 20 point i scenarier uden liv.', place: 'Dæk bomber med en brik, før tallet når 0.' },
   'ev:defused': { title: 'Bombe desarmeret', text: 'Bomben er væk, og I fik 15 point.', why: 'Det er fordi en brik blev lagt oven på bomben.' },
   'ev:rune': { title: 'Rune brudt', text: 'Ordet gik gennem runen, så det tæller dobbelt og giver 10 point ekstra.', why: 'Runen er nu et almindeligt bogstav, og felterne omkring den er ikke længere forseglet.' },
@@ -4920,10 +4920,10 @@ Content.explain = {
   'mod:smallHand': { title: 'Lille hånd', text: 'I har kun 5 brikker på hånden.', why: 'Det skyldes omstændigheden Lille hånd, som er valgt for dette spil.', place: 'Det er lettere at bruge hele hånden og få bonus.' },
   'mod:bigHand': { title: 'Stor hånd', text: 'I har 9 brikker på hånden.', why: 'Det skyldes omstændigheden Stor hånd, som er valgt for dette spil.', place: 'Flere muligheder, men sværere at bruge dem alle.' },
   'mod:closed': { title: 'Lukkede hænder', text: 'I kan ikke se hinandens brikker og kan ikke bytte.', why: 'Det skyldes omstændigheden Lukkede hænder, som er valgt for dette spil.' },
-  'diff:easy': { title: 'Let', text: 'Ordæderen spiller roligt og lægger få forhindringer. Flere guldbrikker og 5 hints.' },
+  'diff:easy': { title: 'Let', text: 'Ordslugeren spiller roligt og lægger få forhindringer. Flere guldbrikker og 5 hints.' },
   'diff:normal': { title: 'Normal', text: 'En fair kamp. Bomber har 3 runders lunte. 3 hints.' },
-  'diff:hard': { title: 'Svær', text: 'Ordæderen finder stærkere ord og lægger flere forhindringer. Lidt flere rådne brikker. 3 hints.' },
-  'diff:nightmare': { title: 'Mareridt', text: 'Ordæderen spiller næsten perfekt, bomber har kort lunte, og der er mange rådne brikker. Kun 1 hint.' },
+  'diff:hard': { title: 'Svær', text: 'Ordslugeren finder stærkere ord og lægger flere forhindringer. Lidt flere rådne brikker. 3 hints.' },
+  'diff:nightmare': { title: 'Mareridt', text: 'Ordslugeren spiller næsten perfekt, bomber har kort lunte, og der er mange rådne brikker. Kun 1 hint.' },
   dict: { title: 'Ordlisten', text: 'Spillet bruger Stavekontrolden, en fri dansk stavekontrol bygget på retskrivningen, med cirka 562.000 ordformer. Bøjede former som HUSENE og LØB er med.', why: 'Wordfeud bruger Retskrivningsordbogen under licens fra Dansk Sprognævn, så enkelte ord kan afvige.' }
 };
 
@@ -4934,17 +4934,21 @@ G.Content = Content;
 <script>
 /* Ordforklaringer fra DanNet (CC BY-SA 4.0, DSL og CST, Københavns Universitet).
    Gloss.load(base) indlæser gloss-da.js første gang, der er brug for det.
-   Gloss.lookup(ord) → null | {word, lemma, def, def2, syn:[...], pos, via:'exact'|'form'|'compound', parts?:[venstre, højre]} */
+   Gloss.lookup(ord) → null | {word, lemma, def, def2, syn:[...], pos, via, src, parts?}
+     src: 'dannet' = rigtig DanNet-forklaring · 'morph' = udledt (bøjning/sammensat) · 'valid' = gyldigt ord uden forklaring
+   Et gyldigt dansk ord giver ALTID et resultat (aldrig null), så der kan altid vises noget. */
 (function (G) {
 'use strict';
 let map = null, irr = {}, loading = null;
-const SUF = ['ernes', 'enes', 'erne', 'ene', 'ens', 'ets', 'ers', 'ere', 'est', 'este', 'ede', 'edes', 'ende', 'endes', 'en', 'et', 'er', 'ne', 'es', 'te', 'tes', 'de', 'e', 'r', 's', 't'];
+const SUF = ['ernes', 'enes', 'erne', 'ene', 'ens', 'ets', 'ers', 'este', 'endes', 'ende', 'edes', 'ede', 'est', 'ere', 'en', 'et', 'er', 'ne', 'es', 'te', 'tes', 'de', 'st', 'ste', 'e', 'r', 's', 't'];
+const NOUNING = ['eringerne', 'eringens', 'eringer', 'eringen', 'erings', 'ering', 'ningerne', 'ningens', 'ninger', 'ningen', 'nings', 'ning', 'ingerne', 'ingen', 'inger', 'ings', 'ing'];
 const isW = w => (G.Engine && G.Engine.isWord) ? G.Engine.isWord('da', w) : false;
+const aaform = w => w.indexOf('aa') >= 0 ? w.replace(/aa/g, 'å') : null;
 function parse(d) {
   map = new Map();
   for (const line of d.d.split('\n')) {
     const p = line.split('\t');
-    map.set(p[0], { def: p[1] || '', def2: p[2] || '', syn: p[3] ? p[3].split(',') : [], pos: p[4] || '' });
+    if (p[0]) map.set(p[0], { def: p[1] || '', def2: p[2] || '', syn: p[3] ? p[3].split(',') : [], pos: p[4] || '' });
   }
   irr = d.irr || {};
 }
@@ -4958,41 +4962,94 @@ function load(base) {
     const s = document.createElement('script'); s.src = file; s.async = true;
     s.onload = done;
     s.onerror = () => {
-      // reserve: hent filen og kør den inline (hvis script-tagget blev blokeret)
       fetch(file).then(r => r.text()).then(t => { const s2 = document.createElement('script'); s2.textContent = t; document.head.appendChild(s2); done(); }).catch(() => { loading = null; rej(new Error('Ordforklaringerne kunne ikke hentes')); });
     };
     document.head.appendChild(s);
   });
   return loading;
 }
-function hit(w, lemma, via, parts) { const e = map.get(lemma); return e ? Object.assign({ word: w, lemma, via, parts }, e) : null; }
-function lemmaOf(w) {
+
+// ---- 1) DanNet-opslag (rigtig forklaring) ----
+function dnBase(w) {
   if (map.has(w)) return { lemma: w, via: 'exact' };
+  const a = aaform(w); if (a && map.has(a)) return { lemma: a, via: 'exact' };
   if (irr[w] && map.has(irr[w])) return { lemma: irr[w], via: 'form' };
   for (const s of SUF) {
     if (w.length - s.length < 2 || !w.endsWith(s)) continue;
     const b = w.slice(0, -s.length);
-    const c = [b, b + 'e', b + 'er'];
-    if (/([bdfgklmnprstv])\1$/.test(b)) c.push(b.slice(0, -1));           // katten → kat
-    if (b.endsWith('e')) c.push(b.slice(0, -1));                            // hesten? → hest
+    const c = [b, b + 'e', b + 'er', b + 'ere'];
+    if (/([bdfgklmnprstv])\1$/.test(b)) c.push(b.slice(0, -1));
+    if (b.endsWith('e')) c.push(b.slice(0, -1));
     for (const x of c) if (map.has(x)) return { lemma: x, via: 'form' };
     if (irr[b] && map.has(irr[b])) return { lemma: irr[b], via: 'form' };
   }
   return null;
 }
+function dnCompound(w) {
+  for (let i = 2; i <= w.length - 2; i++) {
+    const right = w.slice(i), left = w.slice(0, i);
+    const r = dnBase(right); if (!r) continue;
+    const lefts = [left]; if (/[se]$/.test(left) && left.length > 2) lefts.push(left.slice(0, -1));
+    if (lefts.some(x => map.has(x) || isW(x))) return { lemma: r.lemma, via: 'compound', parts: [left, right] };
+  }
+  return null;
+}
+
+// ---- 2) Morfologisk fallback via spillets ordbog (når DanNet ikke har ordet) ----
+function dictBase(w) {
+  for (const suf of NOUNING) {
+    if (w.endsWith(suf) && w.length - suf.length >= 2) {
+      const b = w.slice(0, -suf.length);
+      for (const x of [b + 'e', b + 'ere', b, b + 'ne']) if (x !== w && isW(x)) return { base: x, kind: 'infl' };
+    }
+  }
+  for (const s of SUF) {
+    if (w.length - s.length < 2 || !w.endsWith(s)) continue;
+    const b = w.slice(0, -s.length);
+    const c = [b, b + 'e', b + 'er', b + 'ere'];
+    if (/([bdfgklmnprstv])\1$/.test(b)) c.push(b.slice(0, -1));
+    for (const x of c) if (x !== w && isW(x)) return { base: x, kind: s === 's' ? 'gen' : 'infl' };
+  }
+  if (w.endsWith('s') && isW(w.slice(0, -1))) return { base: w.slice(0, -1), kind: 'gen' };
+  return null;
+}
+function dictCompound(w) {
+  for (let i = 2; i <= w.length - 3; i++) {
+    const right = w.slice(i), left = w.slice(0, i);
+    if (right.length < 2) continue;
+    const rb = isW(right) ? right : (dictBase(right) || {}).base;
+    if (!rb) continue;
+    const lefts = [left]; if (/[se]$/.test(left) && left.length > 2) lefts.push(left.slice(0, -1));
+    const lw = lefts.find(x => isW(x)); if (lw) return { left: lw, right: rb };
+  }
+  return null;
+}
+
+function dnEntry(w, lemma, via, parts) {
+  const e = map.get(lemma); return e ? Object.assign({ word: w, lemma, via, src: 'dannet', parts }, e) : null;
+}
+function up(x) { return x.toUpperCase(); }
+
 function lookup(word) {
   if (!map || !word) return null;
   const w = String(word).toLowerCase();
-  const l = lemmaOf(w);
-  if (l) return hit(w, l.lemma, l.via);
-  // sammensat ord: find den længste kendte efterled, hvor forleddet også er et ord
-  for (let i = 2; i <= w.length - 2; i++) {
-    const right = w.slice(i), left = w.slice(0, i);
-    const r = lemmaOf(right); if (!r) continue;
-    const lefts = [left]; if (/[se]$/.test(left) && left.length > 2) lefts.push(left.slice(0, -1));
-    if (lefts.some(x => map.has(x) || isW(x))) return hit(w, r.lemma, 'compound', [left, right]);
+  // 1) rigtig forklaring
+  const d = dnBase(w); if (d) return dnEntry(w, d.lemma, d.via);
+  const dc = dnCompound(w); if (dc) return dnEntry(w, dc.lemma, dc.via, dc.parts);
+  // kun fortsæt for gyldige ord
+  if (!isW(w)) return null;
+  // 2) udledt forklaring
+  const c = dictCompound(w);
+  if (c) {
+    const he = map.get(c.right);
+    return { word: w, lemma: c.right, via: 'morph', src: 'morph', parts: [c.left, c.right],
+      def: 'Sammensat af ' + up(c.left) + ' + ' + up(c.right) + '.' + (he ? ' ' + up(c.right) + ': ' + he.def : '') };
   }
-  return null;
+  const b = dictBase(w);
+  if (b) return { word: w, lemma: b.base, via: 'morph', src: 'morph',
+    def: (b.kind === 'gen' ? 'Ejefald af ' : 'Bøjning af ') + up(b.base) + '.' };
+  // 3) gyldigt ord uden forklaring
+  return { word: w, lemma: w, via: 'valid', src: 'valid', def: 'Gyldigt ord i spillets ordbog.' };
 }
 G.Gloss = { load, lookup, ready: () => !!map, source: 'DanNet (CC BY-SA 4.0), Det Danske Sprog- og Litteraturselskab og Center for Sprogteknologi, Københavns Universitet' };
 })(typeof window !== 'undefined' ? window : globalThis);
@@ -5003,7 +5060,7 @@ window.DICT_DA={alpha:"abcdefghijklmnopqrstuvwxyzæøå",root:1,words:561587,dat
 
 </script>
 <script>
-/* Ordæderen – brugerflade. Afhænger af Engine (engine.js), Mascot (mascot.js), evt. Net (net.js) og Content (content.js). */
+/* Ordslugeren – brugerflade. Afhænger af Engine (engine.js), Mascot (mascot.js), evt. Net (net.js) og Content (content.js). */
 (function () {
 'use strict';
 
@@ -5082,7 +5139,7 @@ function buddyReply(t) {
 }
 function endingText(result, vars) {
   try { if (window.Content && Content.ending) return Content.ending(result, vars); } catch (e) {}
-  return result === 'win' ? { title: 'I slog Ordæderen!', text: `I endte på ${vars.team} point.` } : { title: 'Ordæderen vandt', text: `I nåede ${vars.team} point.` };
+  return result === 'win' ? { title: 'I slog Ordslugeren!', text: `I endte på ${vars.team} point.` } : { title: 'Ordslugeren vandt', text: `I nåede ${vars.team} point.` };
 }
 const scenIntro = id => (window.Content && Content.scenarios && Content.scenarios[id] && Content.scenarios[id].intro) || E.SCEN[id].blurb;
 const scenTips = id => (window.Content && Content.scenarios && Content.scenarios[id] && Content.scenarios[id].tips) || [];
@@ -5431,7 +5488,7 @@ function partnerJoined() { return G.mode !== 'online' || !!(G.meta && G.meta.p1)
 function renderTop() {
   const st = G.st, S = E.SCEN[st.scen];
   $('#g-scen').textContent = S.name;
-  $('#g-round').innerHTML = `<span${ta(st.roundLimit < 99 ? `I har ${Math.max(0, st.roundLimit - st.round + 1)} runder tilbage, inklusive denne. En runde er jeres to træk og Ordæderens tur.` : 'En runde er jeres to træk og Ordæderens tur. Der er ingen rundegrænse.')}>Runde ${Math.min(st.round, st.roundLimit)}${st.roundLimit < 99 ? ' af ' + st.roundLimit : ''}</span><span${ta(`${st.bag.length} brikker tilbage i posen. Spillet slutter, når posen og en hånd er tomme.`)}>Posen: ${st.bag.length}</span>`;
+  $('#g-round').innerHTML = `<span${ta(st.roundLimit < 99 ? `I har ${Math.max(0, st.roundLimit - st.round + 1)} runder tilbage, inklusive denne. En runde er jeres to træk og Ordslugerens tur.` : 'En runde er jeres to træk og Ordslugerens tur. Der er ingen rundegrænse.')}>Runde ${Math.min(st.round, st.roundLimit)}${st.roundLimit < 99 ? ' af ' + st.roundLimit : ''}</span><span${ta(`${st.bag.length} brikker tilbage i posen. Spillet slutter, når posen og en hånd er tomme.`)}>Posen: ${st.bag.length}</span>`;
   setTip($('#g-team').parentNode, `Holdets samlede point: ${st.team}. I deler alle point.`);
   const tb = $('#g-team'); if (tb.textContent !== String(st.team)) { tb.textContent = st.team; const s = tb.parentNode; s.classList.remove('bump'); void s.offsetWidth; s.classList.add('bump'); }
 }
@@ -5443,7 +5500,7 @@ function renderGoal() {
   const st = G.st, S = E.SCEN[st.scen]; let pr;
   try { pr = S.progress(st); } catch (e) { pr = { a: st.team, kind: 'points' }; }
   let h = '';
-  if (pr.kind === 'race') { h += pbar('Jer', pr.a, pr.max, '', `Jeres point: ${pr.a}. Når I ${pr.max} før Ordæderen, vinder I.`) + pbar('Ordæderen', pr.b, pr.max, 'eat', `Ordæderens point: ${pr.b}. Når den ${pr.max} først, taber I.`); }
+  if (pr.kind === 'race') { h += pbar('Jer', pr.a, pr.max, '', `Jeres point: ${pr.a}. Når I ${pr.max} før Ordslugeren, vinder I.`) + pbar('Ordslugeren', pr.b, pr.max, 'eat', `Ordslugerens point: ${pr.b}. Når den ${pr.max} først, taber I.`); }
   else if (pr.kind === 'points') {
     h += pbar('Point', pr.a, pr.max, '', pr.max ? `I har ${pr.a} point. Målet er ${pr.max}.` : `I har ${pr.a} point.`);
   } else if (pr.kind === 'count') {
@@ -5453,7 +5510,7 @@ function renderGoal() {
     h += `<div class="goal-row"${ta('Så mange tomme felter skal mindst fyldes, før de to fyrtårne hænger sammen.')}><span style="display:flex;align-items:center;gap:10px"><svg class="sicn" viewBox="0 0 40 40" width="34" height="34">${SI.bridge}</svg><span><b class="big-n">${pr.a}</b> ${esc(pr.label || 'felter mangler')}</span></span><span class="goal-txt">Byg broen mellem fyrtårnene</span></div>`;
   } else if (pr.kind === 'tiles') {
     const tot = Math.max(1, pr.a + pr.b);
-    h += `<div class="goal-row"${ta(`Brikker på brættet: jer ${pr.a}, Ordæderen ${pr.b}. Flest brikker til sidst vinder.`)}><span><b class="big-n">${pr.a}</b> brikker til jer</span><span>Ordæderen <b class="big-n">${pr.b}</b></span></div><div class="tug"><i class="a" style="width:${pr.a / tot * 100}%"></i><i class="b" style="width:${pr.b / tot * 100}%"></i></div>`;
+    h += `<div class="goal-row"${ta(`Brikker på brættet: jer ${pr.a}, Ordslugeren ${pr.b}. Flest brikker til sidst vinder.`)}><span><b class="big-n">${pr.a}</b> brikker til jer</span><span>Ordslugeren <b class="big-n">${pr.b}</b></span></div><div class="tug"><i class="a" style="width:${pr.a / tot * 100}%"></i><i class="b" style="width:${pr.b / tot * 100}%"></i></div>`;
   }
   if (pr.lives != null || S.lives) {
     const L = pr.lives != null ? pr.lives : st.lives; let hs = ''; for (let k = 0; k < (S.lives || 3); k++) hs += HEART(k < L);
@@ -5725,7 +5782,7 @@ function cellInfo(i) {
   const t = st.board[i], h = st.haz[i], p = st.prem[i];
   if (t) {
     if (t.rune) return { n: `Rune ${t.c.toUpperCase()}`, d: 'Forsegler felterne omkring sig. Et ord gennem runen tæller dobbelt og giver +10.' };
-    const who = t.o === 'e' ? 'Ordæderens brik' : t.o === 'r' ? 'Brudt rune' : t.o === 'p' + G.me ? 'Din brik' : `${pname(+String(t.o).slice(1))}s brik`;
+    const who = t.o === 'e' ? 'Ordslugerens brik' : t.o === 'r' ? 'Brudt rune' : t.o === 'p' + G.me ? 'Din brik' : `${pname(+String(t.o).slice(1))}s brik`;
     const kd = t.k && t.k !== 'n' && E.KIND[t.k] ? ` ${E.KIND[t.k].name}: ${E.KIND[t.k].desc || ''}` : '';
     return { n: `${t.c.toUpperCase()} – ${who}`, d: (t.b ? 'Blank brik, 0 point.' : `${t.v} point.`) + kd };
   }
@@ -5759,13 +5816,15 @@ function glossEntryHTML(w, g, lang) {
   const W = w.toUpperCase();
   if (lang === 'en') return `<div class="gl-w"><b>${esc(W)}</b></div><p class="gl-none">Ingen forklaring på engelsk.</p><a href="https://en.wiktionary.org/wiki/${encodeURIComponent(w)}" target="_blank" rel="noopener">Slå op i Wiktionary</a>`;
   const ddo = `<a href="https://ordnet.dk/ddo/ordbog?query=${encodeURIComponent(g ? g.lemma : w)}" target="_blank" rel="noopener">Slå op i Den Danske Ordbog</a>`;
-  if (!g) return `<div class="gl-w"><b>${esc(W)}</b></div><p class="gl-none">Ingen forklaring fundet.</p>${ddo}`;
-  let h = `<div class="gl-w"><b>${esc(W)}</b>${g.pos ? `<span class="gl-pos">${esc(g.pos)}</span>` : ''}</div>`;
-  if (g.def) h += `<p>${g.def2 ? '1. ' : ''}${esc(g.def)}</p>`;
+  if (!g) return `<div class="gl-w"><b>${esc(W)}</b></div>${ddo}`;
+  let h = `<div class="gl-w"><b>${esc(W)}</b>${g.src === 'dannet' && g.pos ? `<span class="gl-pos">${esc(g.pos)}</span>` : ''}</div>`;
+  if (g.def) h += `<p${g.src !== 'dannet' ? ' class="gl-note"' : ''}>${g.def2 ? '1. ' : ''}${esc(g.def)}</p>`;
   if (g.def2) h += `<p>2. ${esc(g.def2)}</p>`;
   if (g.syn && g.syn.length) h += `<p class="gl-syn">Synonymer: ${esc(g.syn.slice(0, 5).join(', '))}</p>`;
-  if (g.via === 'compound' && g.parts) h += `<p class="gl-note">Sammensat af ${esc(g.parts.map(x => x.toUpperCase()).join(' + '))} – forklaringen gælder ${esc(g.parts[g.parts.length - 1].toUpperCase())}.</p>`;
-  else if (g.lemma && g.lemma !== w) h += `<p class="gl-note">Grundform: ${esc(g.lemma.toUpperCase())}</p>`;
+  if (g.src === 'dannet') {
+    if (g.via === 'compound' && g.parts) h += `<p class="gl-note">Sammensat af ${esc(g.parts.map(x => x.toUpperCase()).join(' + '))} – forklaringen gælder ${esc(g.parts[g.parts.length - 1].toUpperCase())}.</p>`;
+    else if (g.lemma && g.lemma !== w) h += `<p class="gl-note">Grundform: ${esc(g.lemma.toUpperCase())}</p>`;
+  }
   return h + ddo;
 }
 function placeGloss(r) {
@@ -5781,14 +5840,15 @@ async function showGloss(words, anchorEl, extra) {
   glossAnchor = r;
   glossEl = document.createElement('div'); glossEl.className = 'gloss-pop'; glossEl.setAttribute('role', 'dialog'); glossEl.setAttribute('aria-label', 'Ordforklaring');
   document.body.appendChild(glossEl);
-  const render = (body) => { if (seq !== glossSeq || !glossEl) return; glossEl.innerHTML = body + (extra ? `<p class="gl-extra">${extra}</p>` : '') + (lang === 'en' ? '' : '<p class="gl-src">Kilde: DanNet</p>'); placeGloss(r); };
+  const render = (body, dannet) => { if (seq !== glossSeq || !glossEl) return; glossEl.innerHTML = body + (extra ? `<p class="gl-extra">${extra}</p>` : '') + (dannet ? '<p class="gl-src">Kilde: DanNet</p>' : ''); placeGloss(r); };
   const ws = words.slice(0, 2);
   if (lang !== 'en' && window.Gloss && !Gloss.ready()) {
     render(`<div class="gl-w"><b>${esc(ws.map(w => w.toUpperCase()).join(' · '))}</b></div><p class="gl-none">Henter forklaring …</p>`);
-    try { await Gloss.load(GLOSS_BASE); } catch (e) { /* vis "ingen forklaring" */ }
+    try { await Gloss.load(GLOSS_BASE); } catch (e) {}
   }
   const look = w => { try { return lang !== 'en' && window.Gloss && Gloss.ready() ? Gloss.lookup(w) : null; } catch (e) { return null; } };
-  render(ws.map(w => `<div class="gl-entry">${glossEntryHTML(w, look(w), lang)}</div>`).join(''));
+  const gs = ws.map(look);
+  render(ws.map((w, k) => `<div class="gl-entry">${glossEntryHTML(w, gs[k], lang)}</div>`).join(''), gs.some(g => g && g.src === 'dannet'));
 }
 
 let tipEl = null, tipT = null, tipPos = null;
@@ -5965,7 +6025,7 @@ async function doAction(kind, arg) {
 }
 function saveSolo() { if (G.mode !== 'solo' || !G.st) return; try { if (G.st.over) Net.local.clear(); else Net.local.save(G.st); } catch (e) {} }
 
-/* Viser en ny tilstand med animationer: spillerens træk, Ordæderens scene, toasts og slut. */
+/* Viser en ny tilstand med animationer: spillerens træk, Ordslugerens scene, toasts og slut. */
 async function present(ns, info) {
   G.anim = (G.anim || 0) + 1;
   try { await presentInner(ns, info || {}); } finally { G.anim--; if (G.st && G.scr === 'game') { renderRack(); renderActions(); renderStatus(); } }
@@ -5983,7 +6043,7 @@ async function presentInner(ns, info) {
   G.st = ns;
   syncOrder();
   if (eaterNew) {
-    // mellemtilstand: brættet før Ordæderen handlede
+    // mellemtilstand: brættet før Ordslugeren handlede
     const L = ns.lastEater, E8 = new Set(L.cells);
     for (const b of L.boom || []) for (const j of nb8(ns.N, b)) E8.add(j);
     const mv = new Set(ns.lastMove && ns.lastMove.round === L.round ? ns.lastMove.cells : []);
@@ -6014,7 +6074,7 @@ async function presentInner(ns, info) {
   } else if (moveNew && lm && !info.mine && lm.by !== G.me) {
     toast(`${pname(lm.by)} ${lm.fx && lm.fx[0] === 'Byttede' ? 'byttede brikker' : 'meldte pas'}.`);
   }
-  // andre begivenheder (ikke Ordæderens – dem viser scenen)
+  // andre begivenheder (ikke Ordslugerens – dem viser scenen)
   for (const l of fresh) {
     if (l.who === 'sys' && !/Spillet starter/.test(l.txt) && !ns.over) toast(l.txt);
     if (/takkede nej|tog imod|trak tilbuddet/.test(l.txt) && l.who !== 'p' + G.me) toast(l.txt, /tog imod/.test(l.txt) ? 'good' : '');
@@ -6117,7 +6177,7 @@ function scheduleBotAnswer() {
   setTimeout(tryAns, 1000);
 }
 
-/* ---------------------------------------------------------------- Ordæderens scene */
+/* ---------------------------------------------------------------- Ordslugerens scene */
 function eaterSituation(lines, ns) {
   const txt = lines.map(l => l.txt).join(' ');
   if ((ns.lastEater.boom || []).length) return 'boom';
@@ -6139,7 +6199,7 @@ async function eaterScene(ns, lines) {
   const sc = $('#scene');
   const sit = eaterSituation(lines, ns);
   const quip = eaterLine(sit, {});
-  sc.innerHTML = `<button class="scene-skip">Spring over</button><div class="scene-m"><div class="mw">${Mascot.svg(sit === 'boom' ? 'sly' : 'hungry')}</div><div class="scene-say"><b>${wrapWords(esc(quip))}</b><p id="scene-line">${lines.length ? wrapWords(esc(lines[0].txt)) : 'Ordæderen kigger sulten på brættet …'}</p></div></div>`;
+  sc.innerHTML = `<button class="scene-skip">Spring over</button><div class="scene-m"><div class="mw">${Mascot.svg(sit === 'boom' ? 'sly' : 'hungry')}</div><div class="scene-say"><b>${wrapWords(esc(quip))}</b><p id="scene-line">${lines.length ? wrapWords(esc(lines[0].txt)) : 'Ordslugeren kigger sulten på brættet …'}</p></div></div>`;
   sc.hidden = false;
   sc.onclick = () => { G.skipScene = true; };
   const mw = sc.querySelector('.mw');
@@ -6359,7 +6419,7 @@ function openMenu() {
     s.querySelector('#m-set').onclick = () => { closeSheet(); openSettings('game'); };
     s.querySelector('#m-log').onclick = () => { closeSheet(); openLog(); };
     s.querySelector('#m-home').onclick = () => { closeSheet(); leaveGame(); };
-    const q = s.querySelector('#m-quit'); if (q) q.onclick = async () => { closeSheet(); if (await confirmDlg('Opgiv spillet?', 'Spillet bliver slettet, og Ordæderen får lov at vinde denne gang.', 'Opgiv', 'Spil videre', true)) { Net.local.clear(); leaveGame(); } };
+    const q = s.querySelector('#m-quit'); if (q) q.onclick = async () => { closeSheet(); if (await confirmDlg('Opgiv spillet?', 'Spillet bliver slettet, og Ordslugeren får lov at vinde denne gang.', 'Opgiv', 'Spil videre', true)) { Net.local.clear(); leaveGame(); } };
     const lv = s.querySelector('#m-leave'); if (lv) lv.onclick = async () => { closeSheet(); if (await confirmDlg('Fjern spillet?', 'Spillet forsvinder fra din liste. Er der ingen makker endnu, bliver invitationen slettet.', 'Fjern', 'Fortryd', true)) { try { await Net.leave(G.id); } catch (e) {} leaveGame(); } };
   });
   G.sheet = 'menu';
@@ -6386,7 +6446,7 @@ function showEnd() {
     <h2>${esc(ending.title)}</h2><p>${esc(st.resultText ? st.resultText + ' ' : '')}${esc(ending.text)}</p>
     <div class="stats">
       <div class="stat"><small>Holdets point</small><b>${st.team}</b></div>
-      ${pr.kind === 'race' ? `<div class="stat"><small>Ordæderen</small><b>${st.eater}</b></div>` : pr.kind === 'tiles' ? `<div class="stat"><small>Brikker (jer / den)</small><b>${pr.a} / ${pr.b}</b></div>` : `<div class="stat"><small>Runder</small><b>${Math.min(st.round, st.roundLimit)}</b></div>`}
+      ${pr.kind === 'race' ? `<div class="stat"><small>Ordslugeren</small><b>${st.eater}</b></div>` : pr.kind === 'tiles' ? `<div class="stat"><small>Brikker (jer / den)</small><b>${pr.a} / ${pr.b}</b></div>` : `<div class="stat"><small>Runder</small><b>${Math.min(st.round, st.roundLimit)}</b></div>`}
       <div class="stat wide"><small>Bedste træk</small><b>${best}</b></div>
       <div class="stat"><small>Træk</small><b>${s.moves || 0}</b></div>
       <div class="stat"><small>Hele hånden</small><b>${s.bingos || 0}</b></div>
@@ -6555,7 +6615,7 @@ function showHome() {
     c.hidden = false;
     c.innerHTML = `<span class="bi">${ic('play')}</span><span class="bt">Fortsæt solo-spil<span class="sub">${esc(E.SCEN[saved.scen].name)}, runde ${saved.round}, ${saved.team} point</span></span>`;
   } else c.hidden = true;
-  $('#h-solo').innerHTML = `<span class="bi">${ic('bot')}</span><span class="bt">Spil solo med bot-makker<span class="sub">Du og en computer-makker mod Ordæderen</span></span>`;
+  $('#h-solo').innerHTML = `<span class="bi">${ic('bot')}</span><span class="bt">Spil solo med bot-makker<span class="sub">Du og en computer-makker mod Ordslugeren</span></span>`;
   const be = NB(), needConn = be === 'mock' && !allowMock();
   $('#h-online').innerHTML = `<span class="bi">${ic('users')}</span><span class="bt">Spil online med din makker<span class="sub">${needConn ? 'Forbind først i Indstillinger' : 'Hver på sin telefon, på skift'}</span></span>`;
   setTip($('#h-online'), needConn ? 'Forbind jeres eget lager i Indstillinger, så kan I spille på hver jeres telefon.' : 'Start et spil og inviter din makker.');
@@ -6781,7 +6841,7 @@ function showDisc(moment) {
   let body = '';
   for (const it of moment) {
     const x = xp(it.key), v = it.vars || {};
-    if (it.key === 'board') { body += `<p style="margin:2px 0 6px">${esc(x.text)}</p>${legendMini()}<p style="margin:4px 0;color:var(--ink-2)">${esc(x.place || '')} Specialfelter med ikon og Ordæderens forhindringer bliver forklaret, første gang de dukker op.</p>`; continue; }
+    if (it.key === 'board') { body += `<p style="margin:2px 0 6px">${esc(x.text)}</p>${legendMini()}<p style="margin:4px 0;color:var(--ink-2)">${esc(x.place || '')} Specialfelter med ikon og Ordslugerens forhindringer bliver forklaret, første gang de dukker op.</p>`; continue; }
     body += `<div class="disc-item">${visFor(it.key)}<div>${one ? '' : `<b>${esc(x.title)}</b>`}<p class="pl2">${esc(fillT(x.text || '', v))}</p>${x.why && one ? `<p>${esc(fillT(x.why, v))}</p>` : ''}${x.place ? `<p class="pl2">${esc(fillT(x.place, v))}</p>` : ''}</div></div>`;
   }
   const hasCells = moment.some(m => m.cells && m.cells.length), hasRack = moment.some(m => m.rack && m.rack.length);
@@ -6830,7 +6890,7 @@ function helpSections() {
     { id: 'bonus', title: 'Bonusfelter', html: ['dl', 'tl', 'ql', 'dw', 'tw'].map(k => helpItem('prem:' + k)).join('') },
     { id: 'special', title: 'Specialfelter', html: ['hand', 'chest', 'relay', 'time', 'portal'].map(k => helpItem('prem:' + k, { noWhy: true })).join('') },
     { id: 'tiles', title: 'Brikker', html: ['tile:own', 'tile:eater', 'kind:gold', 'kind:silver', 'kind:rot', 'kind:blast', 'kind:blank'].map(k => helpItem(k, { noWhy: true })).join('') },
-    { id: 'haz', title: 'Ordæderens forhindringer', html: ['haz:rock', 'haz:ice', 'haz:poison', 'haz:void', 'haz:bomb', 'rune', 'sealed'].map(k => helpItem(k)).join('') },
+    { id: 'haz', title: 'Ordslugerens forhindringer', html: ['haz:rock', 'haz:ice', 'haz:poison', 'haz:void', 'haz:bomb', 'rune', 'sealed'].map(k => helpItem(k)).join('') },
     { id: 'events', title: 'Hændelser', html: evs.map(k => helpItem(k)).join('') },
     { id: 'scen', title: 'Scenarier', html: scen },
     { id: 'mods', title: 'Omstændigheder', html: mods },
@@ -6903,7 +6963,7 @@ function renderSettings() {
   $('#set-body').innerHTML = `
   <section class="set-sec"><h3>Farvetema</h3><div class="skins">${SKINS.map(s => `<button class="skin ${s.id === cur ? 'on' : ''}" data-skin="${s.id}" aria-pressed="${s.id === cur}">${s.id === 'system' ? `<div class="skin-split">${skinBox('sten')}${skinBox('antracit')}</div>` : skinBox(s.id)}<b>${esc(s.name)}</b><small>${esc(s.desc)}</small></button>`).join('')}</div></section>
   <section class="set-sec"><h3>Spillet</h3>
-    <div class="sw-row"><span>Animationer<small>Brikker der hopper, Ordæderens scene og konfetti</small></span><button class="switch" id="sw-anim" role="switch" aria-checked="${anim}" aria-label="Animationer"></button></div>
+    <div class="sw-row"><span>Animationer<small>Brikker der hopper, Ordslugerens scene og konfetti</small></span><button class="switch" id="sw-anim" role="switch" aria-checked="${anim}" aria-label="Animationer"></button></div>
     <div class="sw-row"><span>Vis ordforklaringer<small>Hold musen stille over et ord, eller tryk længe, for at se hvad det betyder</small></span><button class="switch" id="sw-gloss" role="switch" aria-checked="${glossOn()}" aria-label="Vis ordforklaringer"></button></div>
     <div class="sw-row"><span>Vis begivenheder<small>Panelet med alt, der sker, ved siden af brættet på store skærme</small></span><button class="switch" id="sw-log" role="switch" aria-checked="${LS.get('showLog', true) !== false}" aria-label="Vis begivenheder"></button></div>
     <div class="sw-row" style="display:block"><span>Makkerens styrke som standard<small>Bruges når du starter et nyt solo-spil</small></span><div class="seg" id="set-skill" style="margin-top:10px">${segHTML([[0.7, 'Jævn'], [0.8, 'God'], [0.9, 'Stærk']], sk)}</div></div>
@@ -6970,16 +7030,16 @@ function phoneSection() {
   if (!can) return h + `<p class="set-note">Denne udgave af spillet kan endnu ikke forbinde til GitHub.</p></section>`;
   h += `<div class="phone-form">
     <label class="field"><span>GitHub-brugernavn (ejer af repoet)</span><input id="ph-owner" value="${v('owner')}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="fx jorgenholm"></label>
-    <label class="field"><span>Data-repo</span><input id="ph-repo" value="${v('repo') || 'ordaederen-data'}" autocomplete="off" autocapitalize="off" spellcheck="false"></label>
+    <label class="field"><span>Data-repo</span><input id="ph-repo" value="${v('repo') || 'ord-data'}" autocomplete="off" autocapitalize="off" spellcheck="false"></label>
     <label class="field"><span>Adgangsnøgle (token)</span><span class="pw"><input id="ph-token" type="password" value="${v('token')}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…"><button class="btn btn-soft btn-small" id="ph-show" type="button">Vis</button></span></label>
     <label class="field"><span>Dit navn</span><input id="ph-name" value="${v('name')}" maxlength="14" autocomplete="off"></label>
     <div class="ph-btns"><button class="btn btn-primary" id="ph-connect">${ok ? 'Gem og forbind igen' : 'Forbind'}</button>${ok ? '<button class="btn btn-soft" id="ph-off">Afbryd</button>' : ''}</div>
     <p class="ph-status" id="ph-status" role="status"></p>
   </div>
   <details class="guide"${ok ? '' : ' open'}><summary>Sådan laver du lageret og nøglen</summary><ol>
-    <li>Log ind på github.com, og opret et nyt repository, fx <b>ordaederen-data</b>. Vælg <b>Private</b>, og sæt hak ved <b>Add a README file</b>.</li>
+    <li>Log ind på github.com, og opret et nyt repository, fx <b>ord-data</b>. Vælg <b>Private</b>, og sæt hak ved <b>Add a README file</b>.</li>
     <li>Åbn <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">siden til nye fine-grained tokens</a>.</li>
-    <li>Giv nøglen et navn, fx <b>Ordæderen</b>, og vælg en udløbsdato, fx et år.</li>
+    <li>Giv nøglen et navn, fx <b>Ordslugeren</b>, og vælg en udløbsdato, fx et år.</li>
     <li>Under <b>Repository access</b> vælger du <b>Only select repositories</b> og vælger dit data-repo.</li>
     <li>Under <b>Permissions → Repository permissions</b> sætter du <b>Contents</b> til <b>Read and write</b>. Resten skal stå urørt.</li>
     <li>Tryk <b>Generate token</b>, kopiér nøglen, og indsæt den her sammen med dit brugernavn, repoets navn og dit navn. Tryk <b>Forbind</b>.</li>
@@ -7051,7 +7111,7 @@ async function handleHash() {
     let pair = null; try { pair = Net.readPair ? Net.readPair(h) : null; } catch (e) {}
     clearHash();
     if (!pair) { toast('Invitationslinket kunne ikke læses. Bed om et nyt.', 'warn', 4000); return; }
-    const v = await dialog(`<div class="dm">${Mascot.svg('sly')}</div><h2>Du er inviteret til Ordæderen</h2><p>Skriv dit navn, så din makker kan se, hvem du er.</p>
+    const v = await dialog(`<div class="dm">${Mascot.svg('sly')}</div><h2>Du er inviteret til Ordslugeren</h2><p>Skriv dit navn, så din makker kan se, hvem du er.</p>
       <label class="field" style="text-align:left"><span>Dit navn</span><input id="pair-name" maxlength="14" autocomplete="off"></label>
       <div class="btns"><button class="btn btn-big btn-primary" data-v="ok">Forbind</button><button class="btn btn-soft" data-v="">Ikke nu</button></div>`, { modal: true });
     const name = (($('#pair-name') || {}).value || '').trim();
