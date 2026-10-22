@@ -508,6 +508,14 @@ svg.ic { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor
 .rack.disabled .tile { cursor: default; }
 .drag-ghost { position: fixed; z-index: 90; pointer-events: none; transform: translate(-50%, -60%) scale(1.12) rotate(-3deg); box-shadow: inset 0 0 0 var(--tile-bw) var(--tile-edge), 0 14px 24px rgba(0, 0, 0, .3) !important; }
 
+/* brik-vælger når man ofrer en brik for at fjerne en klippe */
+.sac-tiles { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 16px 0 6px; }
+.sac-pick { --ts: 54px; border: none; background: none; padding: 3px; margin: 0; cursor: pointer; border-radius: 14px; box-shadow: inset 0 0 0 2px transparent; transition: box-shadow .12s, transform .12s; }
+.sac-pick .tile { width: var(--ts); height: var(--ts); position: relative; cursor: pointer; }
+.sac-pick:hover { box-shadow: inset 0 0 0 2px var(--line); }
+.sac-pick:active { transform: translateY(1px); }
+.sac-pick:focus-visible { outline: 3px solid var(--acc); outline-offset: 1px; }
+
 .g-actions { display: flex; gap: 8px; align-items: stretch; }
 .btn-play { flex: 1; min-height: 56px; border-radius: 16px; font: 600 22px var(--font-d); --b: var(--acc); --b-line: var(--acc); --b-ink: var(--acc-ink); }
 .btn-play.wait { --b: var(--card); --b-line: var(--line); --b-ink: var(--ink-2); font-size: 18px; }
@@ -1206,7 +1214,7 @@ const PREM = {
   portal: { label: '◆', name: 'Fyrtårn', desc: 'Forbind de to fyrtårne med brikker' }
 };
 const HAZ = {
-  rock:   { name: 'Klippe', desc: 'Der kan ikke lægges brikker her. Kan sprænges væk med en sprængbrik.' },
+  rock:   { name: 'Klippe', desc: 'Der kan ikke lægges brikker her. Tryk på klippen for at ofre en brik og fjerne den, eller spræng den væk med en sprængbrik.' },
   ice:    { name: 'Is', desc: 'Frosset felt – kan ikke bruges, før isen smelter.' },
   poison: { name: 'Gift', desc: 'Bogstavet på feltet tæller minus dobbelt.' },
   void:   { name: 'Afgrund', desc: 'Hele ordet trækkes fra jeres score.' },
@@ -2300,6 +2308,26 @@ function exchange(st, p, ids) {
   st.lastMove = { cells: [], by: p, score: 0, words: [], fx: ['Byttede'], round: st.round };
   endTurn(st); return { ok: true };
 }
+// Ofre en brik permanent for at fjerne en klippe. Hånden falder med 1 (bund 5),
+// brikken ryger ud af spillet (ikke tilbage i posen). Afslutter ikke turen; én gang per tur.
+// En rygsæk-felt (PREM 'hand') hæver hånden igen.
+const SAC_MIN = 5;
+function sacrifice(st, p, i, id) {
+  if (st.over || st.turn !== p) return { ok: false, err: 'Det er ikke din tur.' };
+  const P = st.players[p];
+  const h = st.haz[i];
+  if (!h || h.k !== 'rock') return { ok: false, err: 'Vælg en klippe, du vil fjerne.' };
+  if (st.sacThisTurn === st.round * 2 + p) return { ok: false, err: 'Du kan kun ofre én brik per tur.' };
+  if (P.hand <= SAC_MIN) return { ok: false, err: `Du skal beholde mindst ${SAC_MIN} brikker, så du kan ikke ofre flere.` };
+  const t = P.rack.find(x => x.id === id); if (!t) return { ok: false, err: 'Vælg en brik fra hånden, du vil ofre.' };
+  P.rack = P.rack.filter(x => x.id !== id);
+  P.hand = Math.max(SAC_MIN, P.hand - 1);
+  st.haz[i] = null;
+  st.sacThisTurn = st.round * 2 + p;
+  st.stats.cleared = (st.stats.cleared || 0) + 1;
+  log(st, 'p' + p, `${P.name} ofrede ${tname(t)} og fjernede en klippe. Har nu plads til ${P.hand} brikker.`);
+  return { ok: true, cell: i, hand: P.hand };
+}
 function give(st, p, id) {
   if (st.over || st.turn !== p) return { ok: false, err: 'Det er ikke din tur.' };
   if (st.mods.includes('closed')) return { ok: false, err: 'Med lukkede hænder kan I ikke give brikker.' };
@@ -2532,7 +2560,7 @@ function botTurn(st, p, skill) {
 
 G.Engine = {
   LANGS, KIND, PREM, HAZ, DIFF, MODS, SCEN, MISSIONS, BINGO, TUNE,
-  loadDict, hasDict, isWord, newGame, play, pass, exchange, give, offer, cancelOffer, answerOffer, offerInfo, botAnswerOffer, preview, suggest, botTurn, candidates,
+  loadDict, hasDict, isWord, newGame, play, pass, exchange, give, sacrifice, offer, cancelOffer, answerOffer, offerInfo, botAnswerOffer, preview, suggest, botTurn, candidates,
   evalMove, genMoves, missionText, countTiles, bridgeDist, sealedBy, setRandom, clone, tileVal
 };
 })(typeof window !== 'undefined' ? window : globalThis);
@@ -4189,7 +4217,7 @@ const rules = [
       'Den kan også forbande en brik på jeres hånd, så den bliver rådden, eller stjæle et par brikker og smide dem tilbage i posen.'
     ],
     items: [
-      { key: 'rock', name: 'Klippe', text: 'Feltet er spærret. Kun en sprængbrik kan fjerne den.' },
+      { key: 'rock', name: 'Klippe', text: 'Feltet er spærret. Tryk på klippen for at ofre en brik og æde den væk – eller ryd den med en sprængbrik.' },
       { key: 'ice', name: 'Is', text: 'Feltet er frosset og kan ikke bruges. Isen smelter efter to runder.' },
       { key: 'poison', name: 'Gift', text: 'Bogstavet på feltet tæller minus dobbelt. I nogle scenarier breder giften sig.' },
       { key: 'void', name: 'Afgrund', text: 'Hele ordets score bliver negativ. Læg kun her, hvis det er umagen værd.' },
@@ -4263,7 +4291,7 @@ const scenarios = {
     tips: [
       'Lange ord i den rigtige retning flytter jer længst.',
       'Ordslugerens egne brikker tæller også med i broen.',
-      'Gem sprængbrikkerne til klipper på den korteste vej.'
+      'Spærrer en klippe vejen? Tryk på den for at ofre en brik og fjerne den, eller ryd den med en sprængbrik.'
     ]
   },
   missions: {
@@ -4932,7 +4960,7 @@ Content.explain = {
   'prem:relay': { title: 'Stafet', text: 'Et specialfelt til samarbejde.', why: 'Stafetten ligger på brættet fra start og kan kun bruges én gang.', place: 'Lægger du en brik her, tæller din makkers næste træk dobbelt.' },
   'prem:time': { title: 'Timeglas', text: 'Et specialfelt, der giver ekstra tid.', why: 'Timeglasset ligger på brættet fra start og kan kun bruges én gang.', place: 'Lægger du en brik her, får I én runde mere at spille på.' },
   'prem:portal': { title: 'Fyrtårn', text: 'De to fyrtårne er målet i Broen.', why: 'I skal forbinde dem med en sammenhængende kæde af brikker.', place: 'Begge fyrtårne skal dækkes. Alle brikker tæller, også Ordslugerens.' },
-  'haz:rock': { title: 'Klippe', text: 'Et spærret felt.', why: 'Ordslugeren ruller klipper ind på gode felter og i jeres vej.', place: 'Her kan du ikke lægge en brik. En sprængbrik ved siden af kan fjerne klippen.' },
+  'haz:rock': { title: 'Klippe', text: 'Et spærret felt.', why: 'Ordslugeren ruller klipper ind på gode felter og i jeres vej.', place: 'Her kan du ikke lægge en brik. Tryk på klippen for at ofre en brik og fjerne den (du beholder mindst 5 brikker, og en rygsæk giver pladsen tilbage). En sprængbrik ved siden af rydder den også.' },
   'haz:ice': { title: 'Is', text: 'Et frosset felt. Tallet viser, hvor mange runder isen holder.', why: 'Ordslugeren fryser de felter, I gerne vil bruge.', place: 'Her kan du ikke lægge en brik, før isen er smeltet.' },
   'haz:poison': { title: 'Gift', text: 'Et forgiftet felt.', why: 'Ordslugeren drypper gift tæt på jeres brikker, og i nogle scenarier breder den sig.', place: 'Lægger du en brik her, tæller bogstavet minus dobbelt. Giften forsvinder bagefter.' },
   'haz:void': { title: 'Afgrund', text: 'Et sort hul i brættet.', why: 'Ordslugeren river afgrunde op tæt på jeres ord.', place: 'Lægger du en brik her, bliver hele ordets score negativ. Afgrunden lukkes bagefter.' },
@@ -5788,11 +5816,29 @@ function onPointerUp(e) {
   }
   renderRack(); renderBoard();
 }
+async function askSacrifice(i) {
+  const st = G.st, P = st.players[G.me];
+  if (!P) return;
+  if (st.sacThisTurn === st.round * 2 + G.me) { toast('Du har allerede fjernet en klippe i denne tur.', '', 3200); return; }
+  if (P.hand <= 5) { toast('Du skal beholde mindst 5 brikker, så du kan ikke ofre flere.', 'warn', 4200); return; }
+  const rack = P.rack.slice();
+  if (!rack.length) { toast('Du har ingen brikker at ofre.', 'warn', 3200); return; }
+  const tiles = rack.map(t => `<button class="sac-pick" data-v="${t.id}" aria-label="Ofre ${t.c === '?' ? 'blank brik' : UP(t.c)}">${tileHTML(t)}</button>`).join('');
+  const v = await dialog(`<div class="dm">${Mascot.svg('hungry')}</div><h2>Fjern klippen?</h2>
+    <p>Giv Ordslugeren én brik, så æder den klippen væk. Brikken er <b>væk resten af spillet</b>, og du får herefter plads til <b>${P.hand - 1}</b> brikker – indtil du lander på en rygsæk. Det afslutter ikke din tur. Tryk på den brik, du vil ofre:</p>
+    <div class="sac-tiles">${tiles}</div>
+    <div class="btns"><button class="btn btn-soft" data-v="">Fortryd</button></div>`, { cls: 'sac-dlg' });
+  if (!v) return;
+  const t = rack.find(x => String(x.id) === String(v)); if (!t) return;
+  doAction('sacrifice', { i, id: t.id });
+}
 function onBoardClick(e) {
   if (G.scene || drag || G.suppressClick) return;
   const cell = e.target.closest('.cell'); if (!cell) return;
   if (e.target.closest('.tile.tent')) return; // håndteres af pointer
   const i = +cell.dataset.i;
+  const haz = G.st && G.st.haz[i];
+  if (canAct() && haz && haz.k === 'rock') { askSacrifice(i); return; }
   if (G.sel != null) {
     if (canAct() && cellFree(i)) placeTile(G.sel, i);
     return;
@@ -6026,6 +6072,7 @@ async function doAction(kind, arg) {
     else if (kind === 'offer') r = E.offer(st2, G.me, arg);
     else if (kind === 'cancelOffer') r = E.cancelOffer(st2, G.me);
     else if (kind === 'answer') r = E.answerOffer(st2, G.me, arg);
+    else if (kind === 'sacrifice') r = E.sacrifice(st2, G.me, arg.i, arg.id);
   } catch (e) { console.error(e); r = { ok: false, err: 'Noget gik galt i spilmotoren.' }; }
   if (!r || !r.ok) { toast((r && r.err) || 'Det gik ikke.', 'warn'); return; }
   if (G.mode === 'online') {
@@ -6048,6 +6095,7 @@ async function doAction(kind, arg) {
         else if (kind === 'offer') r3 = E.offer(st3, G.me, arg);
         else if (kind === 'cancelOffer') r3 = E.cancelOffer(st3, G.me);
         else if (kind === 'answer') r3 = E.answerOffer(st3, G.me, arg);
+        else if (kind === 'sacrifice') r3 = E.sacrifice(st3, G.me, arg.i, arg.id);
       } catch (e) { r3 = null; }
       if (!r3 || !r3.ok) { c = { ok: false, err: (r3 && r3.err) || 'Spillet er ændret, så handlingen ikke længere er mulig.' }; break; }
       try { c = await Net.commit(G.id, st3, fresh.meta.ver); } catch (e) { c = { ok: false, err: e.message }; }
@@ -6061,7 +6109,7 @@ async function doAction(kind, arg) {
     }
     if (c.ver) G.meta = Object.assign({}, G.meta, { ver: c.ver });
   }
-  const keepTent = kind === 'offer' || kind === 'cancelOffer' || kind === 'answer';
+  const keepTent = kind === 'offer' || kind === 'cancelOffer' || kind === 'answer' || kind === 'sacrifice';
   if (!keepTent) { G.tent = []; G.sel = null; }
   else G.tent = G.tent.filter(p => st2.players[G.me].rack.some(t => t.id === p.id));
   await present(st2, { mine: true, kind, res: r });
